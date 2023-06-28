@@ -13,12 +13,12 @@ I am Amanda Gloor.
     <dt> :telescope: Python Certified Programmer </dt>
     <dt> :seedling: Learning to set up open source </dt>
 </d1>
-    
-:speech_balloon: Ask me about Plant and Agricultural Science, Cloud Infrastructure, IoT, Software Engineering, Data Analytics and collaborations!!
-:mailbox: Reach me: @amanda_in_tech on Insta or drop a message on LinkedIn
-:zap: Fun fact: I occassionally update this personal site \b
+<p>    
+:speech_balloon: Ask me about Plant and Agricultural Science, Cloud Infrastructure, IoT, Software Engineering, Data Analytics and collaborations!! <br>
+:mailbox: Reach me: @amanda_in_tech on Insta or drop a message on LinkedIn <br>
+:zap: Fun fact: I occassionally update this personal site <br>
 :books: Recommended readings available on Goodreads and Pocket 
-
+</p>
 
 Want to know even more about me ?
 You can download my updated resume or curriculum vitae.
