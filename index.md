@@ -14,7 +14,7 @@ I am Amanda Gloor.
     <dt> :seedling: Learning to set up open source </dt>
 </d1>
 <p>    
-:speech_balloon: Ask me about Plant and Agricultural Science, Cloud Infrastructure, IoT, Software Engineering, Data Analytics and collaborations!! <br>
+:speech_balloon: Ask me about Ag Science & Tech, GIS Drone Imaging, Start Ups, Automation and AI or Data Analytics!! <br>
 :mailbox: Reach me: @amanda_in_tech on Insta or drop a message on LinkedIn <br>
 :zap: Fun fact: I occassionally update this personal site <br>
 :books: Recommended readings available on Goodreads and Pocket 
