@@ -4,8 +4,8 @@ feature_text: |
   ## Site is still under construction 
 ---
 
-<span style="font-size:50px;"> :wave: </span> ## Hi there,<br>  
-## I'm Amanda Gloor </h2>
+<h2>:wave: Hi there,</h2>
+<h2>I'm Amanda Gloor </h2>
 
 <h4> I'm a programmer and horticulturist with a focus on AgTech and backend dev </h4>
 <br>
