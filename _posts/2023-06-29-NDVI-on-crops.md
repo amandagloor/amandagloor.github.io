@@ -1,4 +1,5 @@
 ---
+title: 'Tutorial: Applying the NDVI Index to Drone-Captured Imagery of Crop Fields'
 layout: post
 categories:
 - Technology
@@ -6,9 +7,6 @@ categories:
 feature_image: "https://picsum.photos/2560/600?image=872"
 excerpt_separator: <!--more-->
 ---
-
-# Tutorial: Applying the NDVI Index to Drone-Captured Imagery of Crop Fields  
-
 Farmers and agronomists have long turned to technology to increase yield and manage resources more efficiently. Among the many advanced technologies available, drone technology has become a game-changer, providing invaluable insight into crop health through aerial surveillance. One particularly powerful tool is the Normalized Difference Vegetation Index (NDVI), which enables detailed analysis of plant health. This blog post will provide you with a step-by-step guide on how to apply the NDVI index to drone-captured images of your crop fields.
 <!--more-->  
 
