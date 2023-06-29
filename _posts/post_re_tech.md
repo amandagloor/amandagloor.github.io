@@ -6,33 +6,36 @@ categories:
 feature_image: "https://picsum.photos/2560/600?image=872"
 ---
 
-# Making the Most of RE Tools & Technology
+# Making the Most of RE Tools & Technology  
 
-Real estate sales can be a complex, highly competitive and time-consuming process, but with the help of programming and new technological advancements in Computer Science, real estate agents can now optimize the sales process and close deals faster than ever before. In this presentation, we'll explore the various ways that these cutting-edge technologies can be implemented to improve lead generation, customer engagement, property valuation, and closing deals. 
+Real estate sales can be a **complex, highly competitive** and **time-consuming** process, but with the help of programming and new technological advancements in Computer Science, real estate agents can now optimize the sales process and **close deals faster** than ever before. Let's explore the various ways that these cutting-edge technologies can be implemented to **improve lead generation, customer engagement, property valuation, and closing deals.**  
 
-### So how do you stay ahead of the competition? 
+### So how do you stay ahead of the competition?  
+
 <p align="center">
-    <img width="577" alt="image" src="https://github.com/amandagloor/amandagloor.github.io/assets/124932234/3a272944-80e6-4dca-b0c6-dc1ad60f4066">
+  <img src="../img/image.png">
 </p>
+
 With better data and more time to build relationships and nurture leads, without any loss to performance. To stay ahead, it's crucial to adopt new advancements and make data-driven decisions.  
-
-<p align="center">
-    <img width="672" alt="image" src="https://github.com/amandagloor/amandagloor.github.io/assets/124932234/e774fbd8-8cb8-4776-b76b-01602bad0885">
-</p>
 
 As a realtor, providing a **seamless and satisfying customer experience** is essential for building long-lasting relationships with your clients. 
 
-One way to do this is by providing **personalized marketing campaigns** that cater to their specific needs and preferences. This can include sending targeted email newsletters or social media ads that showcase properties that match their criteria.
+<p align="center">
+  <img src="../img/streamline.png">
+</p>
 
-Automating tasks such as scheduling appointments or sending follow-up emails can also help save you time and provide a more efficient service to your clients, allowing you to focus on building relationships and closing deals.
+One way to do this is by providing **personalized marketing campaigns** that cater to their specific needs and preferences. This can include sending targeted email newsletters or social media ads that showcase properties that match their criteria.  
 
-By using technology to analyze market trends and data, you can make informed decisions about pricing, marketing strategies, and property recommendations.
+Automating tasks such as scheduling appointments or sending follow-up emails can also help save you time and provide a more efficient service to your clients, allowing you to focus on building relationships and closing deals.  
 
-<blockquote> By streamlining your work processes, providing personalized marketing campaigns, automating tasks, and analyzing the market in real-time - you can provide an exceptional customer experience that sets you apart from the competition while improving your bottom line.** </blockquote>
+By using technology to analyze market trends and data, you can make informed decisions about pricing, marketing strategies, and property recommendations.  
 
----
-![[Pasted image 20230628115509.png]]
-
+<blockquote> By streamlining your work processes, providing personalized marketing campaigns, automating tasks, and analyzing the market in real-time - you can provide an exceptional customer experience that sets you apart from the competition while improving your bottom line.** </blockquote> 
+  
+<p align="center">
+  <img src="../img/real_estate_benefits.png">
+</p>
+  
 AI technology is transforming the real estate industry in many ways. One of the biggest benefits of incorporating AI into your business is that it saves you time. 
 
 AI can also generate more leads for your business by analyzing data and identifying potential buyers or sellers who may be interested in your services. This helps you expand your reach and grow your client base.
