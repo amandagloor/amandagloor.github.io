@@ -9,7 +9,7 @@ Hi :wave:
 
 I am Amanda Gloor.
 
-:telescope: Python Certified Programmer \
+:telescope: Python Certified Programmer  
 :seedling: Learning to set up open source
 
 <p>  
