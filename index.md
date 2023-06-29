@@ -20,5 +20,5 @@ I am Amanda Gloor.
 </p>
 
 Want to know even more about me ?
-You can download my [updated resume](../resume.md) here
+You can download my [updated resume](resume.md) here
 The best way to reach me is via email is [lastname][firstname]15[at]gmail.com.
