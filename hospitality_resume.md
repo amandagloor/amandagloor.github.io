@@ -4,69 +4,68 @@ feature_image: "https://picsum.photos/1300/400?image=989"
 feature_text: |
   ## Site is still under construction 
 ---  
-.
+
 ### [Version Français](hospitality_resume.md#résumé)  
 
 ### Skills  
 
-Worked multiple positions as server, bartender, runner, barback, and events. Duties included serving guests in restaurant and bar, answering phone calls and making reservations and seating plans, restocking and taking bar inventory, special event set-up and in-room service.
+- Worked multiple positions as server, bartender, runner, barback, and special events.  
+- Duties included serving guests in restaurant and bar, making cocktails, recommending wine, answering phone calls and making reservations and seating plans, restocking and taking bar inventory, special event set-up and service.
 
-#### Sales  
+#### Sales 
 
-Proven ability to sell and effectively promote products and services, with a history of success and surpassing sales targets. Knowledgeable in business strategies and analytics.
-
-Ability to establish positive relationships with others, as well as collaborate, negotiate, and resolve conflicts.
-
-Strong customer service orientation, with a commitment to creating memorable experiences that exceed expectations and reinforce brand loyalty.
+- Proven ability to sell and effectively promote products and services, with a history of success and surpassing sales targets. Knowledgeable in business strategies and analytics.  
+- Strong customer service orientation, with a commitment to creating memorable experiences that exceed expectations and reinforce brand loyalty.
+- Ability to establish positive relationships with others, as well as collaborate, negotiate, and resolve conflicts.  
 
 #### Language
 
-Fluent in both official languages; intermediate level in Spanish.
+- Fluent in both official languages; intermediate level in Spanish.
 
 Excellent oral and written communication skills, with the ability to convey information clearly and effectively, and adapt to different audiences and situations; including the ability to listen, provide feedback, and effectively communicate with different stakeholders. 
 
 ### Experience:  
 
-##### *The Mixing Bowl* — Casual Bartender and Server  
+##### The Mixing Bowl — *Casual Bartender and Server*  
 September 2021 - Present  
 Ottawa, ON  
 
-##### *Oz Kafe* — Server  
+##### Oz Kafe — *Server*  
 July 2021 - September 2021  
 Ottawa, ON   
 
-##### *Station Mont Tremblant* — Front Desk Agent / Audit  
+##### Station Mont Tremblant — *Front Desk Agent / Audit*  
 October 2020 - July 2021  
 Mont Tremblant, QC  
 
-##### *Feast + Revel/Andaz Byward Market* — Server    
+##### Feast + Revel/Andaz Byward Market — *Server*     
 September 2017 - July 2018  
 Ottawa, ON  
 
-##### *Funky monkey Lodge* — Receptionist  
+##### Funky monkey Lodge — *Receptionist* 
 June 2017 - September 2017  
 Santa Teresa, Costa Rica  
 
-##### *The King Eddy* — Cook  
+##### The King Eddy — *Cook*  
 January 2017 - May 2017  
 Ottawa, ON  
 
-##### *The Flour Factory* — Bartender, Server  
+##### The Flour Factory — *Bartender, Server*  
 March 2016 - December 2016  
 Perth, Australia  
 
-##### *Spanel Crépes et Gourmets* — Manager  
+##### Spanel Crépes et Gourmets — *Manager*  
 March 2015 - March 2016  
 Montreal, QC  
 
-##### *Storm Cellar Bar / HI-Banff* — Bartender & Server  
+##### Storm Cellar Bar / HI-Banff — *Bartender & Server*  
 May 2014 - February 2015   
 Banff, AB  
 
-##### *Java U* — Barista   
+##### Java U — *Barista*   
 Montreal, QC  
  
-##### *Bistro Ambrosia* — Busser & Hostess  
+##### Bistro Ambrosia — *Busser & Hostess*  
 Gatineau, QC  
 
 ### Éducation   
@@ -82,61 +81,65 @@ Gatineau, QC
 
 # Résumé  
 
-### Compétences  
+### Compétences
+
+- Occupé de multiples postes comme serveur, barman, runner, barback et événements spéciaux.
+- Les tâches comprenaient le service aux clients dans le restaurant et le bar, la préparation de cocktails, la recommandation de vins, la réponse aux appels téléphoniques et la prise de réservations et de plans de places, la réassort et l'inventaire du bar, la mise en place et le service lors d'événements spéciaux.
 
 #### Ventes
 
-Capacité démontrée à vendre et à promouvoir efficacement des produits et des services, avec un historique de réussite et de dépassement des objectifs de vente. Connaissance des stratégies et analyses commerciales.   
-Capacité à établir des relations positives avec les autres, ainsi qu'à collaborer, à négocier et à résoudre des conflits.  
-Forte orientation service client, avec un engagement à créer des expériences mémorables qui dépassent les attentes et renforcent la fidélité à la marque.  
+- Capacité démontrée à vendre et à promouvoir efficacement des produits et services, avec un historique de succès et de dépassement des objectifs de vente. Connaissance en stratégies commerciales et analytiques.
+- Forte orientation vers le service client, avec un engagement à créer des expériences mémorables qui dépassent les attentes et renforcent la fidélité à la marque.
+- Capacité à établir des relations positives avec les autres, ainsi qu'à collaborer, négocier et résoudre des conflits.  
 
-#### Langues  
+#### Langues
 
-Capacité à parler couramment dans les deux langues officielles ; niveau intermédiaire en espagnol.   
-Excellente compétence en communication orale et écrite, avec la capacité de transmettre des informations de manière claire et efficace, et de s'adapter à différentes audiences et situations ; qui comprend la capacité d'écouter, de fournir un retour d'information et de communiquer efficacement avec différentes parties prenantes. A travaillé à plusieurs postes en tant que serveur, barman, coureur, backbar et événements. Les tâches comprenaient le service aux clients dans le restaurant et le bar, la réponse aux appels téléphoniques et la prise de réservations et de plans de sièges, la réassort et l'inventaire du bar et les événements spéciaux.  
+- Couramment dans les deux langues officielles; niveau intermédiaire en espagnol.
+
+Excellentes compétences de communication orale et écrite, avec la capacité de transmettre clairement et efficacement des informations et de s'adapter à différents publics et situations; y compris la capacité d'écouter, de fournir des retours, et de communiquer efficacement avec différentes parties prenantes.  
 
 ### Expérience  
 
-##### *The Mixing Bowl* — Barman et Serveur Occasionnel   
+##### The Mixing Bowl — *Barmaid et Serveuse Occasionnel*   
 Septembre 2021 - Présent  
 Ottawa, ON  
 
-##### *Oz Kafe* — Serveur  
+##### Oz Kafe — *Serveuse*  
 Juillet 2021 - Septembre 2021  
 Ottawa, ON  
 
-##### *Station Mont Tremblant* — Agent de Réception / Audit  
+##### Station Mont Tremblant — *Agente de Réception / Audit*  
 Octobre 2020 - Juillet 2021  
 Mont Tremblant, QC  
 
-##### *Feast + Revel/Andaz Byward Market* — Serveur  
+##### Feast + Revel/Andaz Byward Market — *Serveuse*  
 Septembre 2017 - Juillet 2018  
 Ottawa, ON  
 
-##### *Funky monkey Lodge* — Réceptionniste  
+##### Funky monkey Lodge — *Réceptionniste*  
 Juin 2017 - Septembre 2017  
 Santa Teresa, Costa Rica  
 
-##### *The King Eddy* — Cuisinier  
+##### The King Eddy — *Cook*  
 Janvier 2017 - Mai 2017  
 Ottawa, ON  
 
-##### *The Flour Factory* — Barman, Serveur  
+##### The Flour Factory — *Barmaid, Serveuse*  
 Mars 2016 - Décembre 2016  
 Perth, Australie  
 
-##### *Spanel Crépes et Gourmets* — Gérant  
+##### Spanel Crépes et Gourmets — *Gérante*  
 Mars 2015 - Mars 2016  
 Montréal, QC  
 
-##### *Storm Cellar Bar / HI-Banff* — Barman & Serveur  
+##### Storm Cellar Bar / HI-Banff — *Barmaid & Serveuse*  
 Mai 2014 - Février 2015  
 Banff, AB  
 
-##### *Java U* — Barista  
+##### Java U — *Barista*  
 Montréal, QC  
 
-##### *Bistro Ambrosia* — Busser & Hôtesse  
+##### Bistro Ambrosia — *Busser & Hôtesse*  
 Gatineau, QC  
 
 ### Éducation  
