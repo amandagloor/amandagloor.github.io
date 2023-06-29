@@ -10,7 +10,8 @@ Hi :wave:
 I am Amanda Gloor.
 
 :telescope: Python Certified Programmer \
-:seedling: Learning to set up open source \
+:seedling: Learning to set up open source
+
 <p>  
 :speech_balloon: Ask me about Ag Science & Tech, GIS Drone Imaging, Start Ups, Automation and AI or Data Analytics!! <br>
 :mailbox: Reach me: @amanda_in_tech on Insta or drop a message on LinkedIn <br>
