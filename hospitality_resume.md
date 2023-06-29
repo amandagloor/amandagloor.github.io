@@ -1,4 +1,4 @@
-[Version Français](hospitality_resume#résumé)
+[Version Français](hospitality_resume.md#résumé)
 
 ## Skills  
 
