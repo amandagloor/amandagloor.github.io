@@ -6,3 +6,5 @@ feature_text: |
 ---
 Hello
 
+Check out my hospitality resume [here](hospitality_resume.md)
+
