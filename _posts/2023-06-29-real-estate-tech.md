@@ -5,11 +5,13 @@ categories:
 - Real Estate
 - Business
 feature_image: "https://picsum.photos/2560/600?image=872"
+excerpt_separator: <!--more-->
 ---
 
 # Making the Most of RE Tools & Technology  
 
 Real estate sales can be a **complex, highly competitive** and **time-consuming** process, but with the help of programming and new technological advancements in Computer Science, real estate agents can now optimize the sales process and **close deals faster** than ever before. Let's explore the various ways that these cutting-edge technologies can be implemented to **improve lead generation, customer engagement, property valuation, and closing deals.**  
+<!--more-->
 
 ### So how do you stay ahead of the competition?  
 
