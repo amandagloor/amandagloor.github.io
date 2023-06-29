@@ -1,4 +1,4 @@
-[Version Français](##Résumé)
+[Version Français](#Résumé)
 
 ## Skills  
 
@@ -74,7 +74,7 @@ Développement international - 2017
 Études des médias - 2012 à 2014  
 
 
-## Résumé
+# Résumé
 
 ### Compétences
 ---
