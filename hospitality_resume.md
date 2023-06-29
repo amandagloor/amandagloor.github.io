@@ -1,10 +1,12 @@
-### [Version Français](hospitality_resume.md#résumé)
+# Hospitality Resume  
+
+### [Version Français](hospitality_resume.md#résumé)  
 
 ### Skills  
 
 Worked multiple positions as server, bartender, runner, barback, and events. Duties included serving guests in restaurant and bar, answering phone calls and making reservations and seating plans, restocking and taking bar inventory, special event set-up and in-room service.
 
-#### Sales
+#### Sales  
 
 Proven ability to sell and effectively promote products and services, with a history of success and surpassing sales targets. Knowledgeable in business strategies and analytics.
 
