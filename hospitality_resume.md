@@ -1,4 +1,9 @@
-# Hospitality Resume  
+---
+title: Hospitality Resume
+feature_image: "https://picsum.photos/1300/400?image=989"
+feature_text: |
+  ## Site is still under construction 
+---  
 
 ### [Version Français](hospitality_resume.md#résumé)  
 
