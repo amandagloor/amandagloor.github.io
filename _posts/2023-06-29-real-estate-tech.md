@@ -13,7 +13,7 @@ Real estate sales can be a **complex, highly competitive** and **time-consuming*
 ### So how do you stay ahead of the competition?  
 
 <p align="center">
-  <img src="/img/image.png"
+  <img src="/img/data.png">
 </p>
 
 With better data and more time to build relationships and nurture leads, without any loss to performance. To stay ahead, it's crucial to adopt new advancements and make data-driven decisions.  

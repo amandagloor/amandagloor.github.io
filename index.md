@@ -7,17 +7,14 @@ feature_text: |
 
 <h2> :wave: Hi there, <br>   
 I'm Amanda Gloor </h2>
-
+<br>
 <h4> I'm a programmer and horticulturist with a focus on AgTech and backend dev </h4>
-
-
+<br>
 <p>
-:telescope: Python Certified Programmer <br>
-:seedling: Learning to set up open source <br> 
-:speech_balloon: Ask me about Ag Science & Tech, GIS Drone Imaging, Start Ups, Automation and AI or Data Analytics!! <br>
-:mailbox: Reach me: @amanda_in_tech on Insta or drop a message on LinkedIn <br>
-:zap: Fun fact: I occassionally update this personal site <br>
-:books: Recommended readings available on Goodreads and Pocket 
+:telescope: Certified Python Programmer <br>
+:seedling:  <br> 
+:speech_balloon: Ask me about Ag Science & Tech or why your plant is dying <br>
+:mailbox: Reach me: @amanda_in_tech on Insta or drop a message on [LinkedIn](https://linkedin.com/amandagloor)
 </p>
 
 Want to know even more about me?
