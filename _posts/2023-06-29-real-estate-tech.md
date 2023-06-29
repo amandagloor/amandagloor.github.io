@@ -16,7 +16,7 @@ Real estate sales can be a **complex, highly competitive** and **time-consuming*
 ### So how do you stay ahead of the competition?  
 
 <p align="center">
-  <img src="../img/image.png">
+  <img src="/img/image.png">
 </p>
 
 With better data and more time to build relationships and nurture leads, without any loss to performance. To stay ahead, it's crucial to adopt new advancements and make data-driven decisions.  
@@ -24,7 +24,7 @@ With better data and more time to build relationships and nurture leads, without
 As a realtor, providing a **seamless and satisfying customer experience** is essential for building long-lasting relationships with your clients.  
 
 <p align="center">
-  <img src="../img/streamline.png">
+  <img src="/img/streamline.png">
 </p>
 
 One way to do this is by providing **personalized marketing campaigns** that cater to their specific needs and preferences. This can include sending targeted email newsletters or social media ads that showcase properties that match their criteria.  
@@ -36,7 +36,7 @@ By using technology to analyze market trends and data, you can make informed dec
 **By streamlining your work processes, providing personalized marketing campaigns, automating tasks, and analyzing the market in real-time - you can provide an exceptional customer experience that sets you apart from the competition while improving your bottom line.**  
   
 <p align="center">
-  <img src="../img/real_estate_benefits.png">
+  <img src="/img/real_estate_benefits.png">
 </p>
   
 AI technology is transforming the real estate industry in many ways. One of the biggest benefits of incorporating AI into your business is that it saves you time.  
