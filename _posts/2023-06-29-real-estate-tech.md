@@ -19,7 +19,7 @@ Real estate sales can be a **complex, highly competitive** and **time-consuming*
 
 With better data and more time to build relationships and nurture leads, without any loss to performance. To stay ahead, it's crucial to adopt new advancements and make data-driven decisions.  
 
-As a realtor, providing a **seamless and satisfying customer experience** is essential for building long-lasting relationships with your clients. 
+As a realtor, providing a **seamless and satisfying customer experience** is essential for building long-lasting relationships with your clients.  
 
 <p align="center">
   <img src="../img/streamline.png">
@@ -29,15 +29,15 @@ One way to do this is by providing **personalized marketing campaigns** that cat
 
 Automating tasks such as scheduling appointments or sending follow-up emails can also help save you time and provide a more efficient service to your clients, allowing you to focus on building relationships and closing deals.  
 
-By using technology to analyze market trends and data, you can make informed decisions about pricing, marketing strategies, and property recommendations.  
+By using technology to analyze market trends and data, you can make informed decisions about pricing, marketing strategies, and property recommendations.   
 
-<blockquote> By streamlining your work processes, providing personalized marketing campaigns, automating tasks, and analyzing the market in real-time - you can provide an exceptional customer experience that sets you apart from the competition while improving your bottom line.** </blockquote> 
+**By streamlining your work processes, providing personalized marketing campaigns, automating tasks, and analyzing the market in real-time - you can provide an exceptional customer experience that sets you apart from the competition while improving your bottom line.**  
   
 <p align="center">
   <img src="../img/real_estate_benefits.png">
 </p>
   
-AI technology is transforming the real estate industry in many ways. One of the biggest benefits of incorporating AI into your business is that it saves you time. 
+AI technology is transforming the real estate industry in many ways. One of the biggest benefits of incorporating AI into your business is that it saves you time.  
 
 AI can also generate more leads for your business by analyzing data and identifying potential buyers or sellers who may be interested in your services. This helps you expand your reach and grow your client base.
 
