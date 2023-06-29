@@ -1,5 +1,4 @@
 ---
-title: NDVI on crops Tutorial
 layout: post
 categories:
 - Technology

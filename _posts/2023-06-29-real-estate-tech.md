@@ -1,5 +1,4 @@
 ---
-title: Real Estate Technology
 layout: post
 categories:
 - Real Estate
