@@ -14,6 +14,7 @@ Real estate sales can be a **complex, highly competitive** and **time-consuming*
 <!--more-->
 
 ### So how do you stay ahead of the competition?  
+![testing](/img/image.png)
 
 <p align="center">
   <img src="/img/image.png"
