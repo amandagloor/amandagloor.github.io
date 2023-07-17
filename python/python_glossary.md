@@ -3,6 +3,7 @@ feature_image: "https://picsum.photos/1300/400?image=989"
 feature_text: |
   ## Site is still under construction 
 ---
+
 # Python Glossary
 
 ### .abs()
@@ -10,7 +11,7 @@ The .abs() function in Python is used to return the absolute value of a number. 
 
 The abs() function can take integers, floats, and complex numbers as input.
 
-### [.append()](append.md)
+### [.append()](python/python_glossary/append.md)
 The `append` method modifies the original list by adding the new element at the end, and returns `None`.
 
-### [Backslash](backslash.md)
+### [Backslash](python/python_glossary/backslash.md)
