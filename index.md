@@ -14,7 +14,7 @@ My background in agricultural science and entrepreneurship allows me to create p
 :telescope: Junior Programmer, Agro-Tech and Science, Sales and Marketing <br>
 :seedling: I’m currently learning AWS Cloud and Data Modelling <br> 
 :speech_balloon: Ask me about sustainability or why your plant is dying <br>
-:mailbox: Reach me: [@amanda_in_tech](www.instagram.com/amanda_in_tech) on Insta or drop a message on [LinkedIn](wwww.linkedin.com/amandagloor)
+:mailbox: Reach me on [Insta](https://www.instagram.com/amanda_in_tech) or drop a message on [LinkedIn](https://www.linkedin.com/amandagloor)
 </p>
 
 Want to know even more about me?
