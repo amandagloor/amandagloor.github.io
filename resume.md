@@ -5,7 +5,9 @@ feature_text: |
   ## Site is still under construction 
 ---
 
-Hello  
+Click [here](prof_resume.pdf) to check out my resume!
 
-Check out my hospitality resume [here](hospitality_resume.md)
+Want to know about my other skills and experience? 
+
+[Hospitality Resume](hospitality_resume.md)
 
