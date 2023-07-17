@@ -7,7 +7,7 @@ feature_text: |
 
 Click [here](prof_resume.pdf) to check out my resume!
 
-Want to know about my other skills and experience? 
+Want to know about my other skills and experience?  
 
 [Hospitality Resume](hospitality_resume.md)
 
