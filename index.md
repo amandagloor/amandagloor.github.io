@@ -23,4 +23,4 @@ You can check out my [updated resume](resume.md) here
 The best way to reach me is via email is amanda.gloor@gmail.com   
 
 
-Check out my [Python Notebook](python.md)
+Check out my [Python Notebook](Python_Notebook.html)
