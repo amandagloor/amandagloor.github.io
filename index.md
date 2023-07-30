@@ -21,6 +21,6 @@ My background in agricultural science and entrepreneurship allows me to create p
 Want to know even more about me?    
 You can check out my [updated resume](resume.md) here    
 The best way to reach me is via email is amanda.gloor@gmail.com   
-
-
+    
+    
 Check out my [Python Notebook](Python_Notebook.html) and this reference [folder](python.html)!
