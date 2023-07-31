@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Python Language Reference</title>
+  <base href="../../">
+  <meta id="root-path" root-path="../../">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style> </style>
+
+
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 137,
+      "linkCount": 115,
+      "radii": [7, 5.222222222222222, 4.493055555555555, 3.7899305555555554, 3.7899305555555554, 3.6388888888888893, 3.6388888888888893, 3.6388888888888893, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "labels": ["Glossary", "List", "Notebook", "Examples", "String", "Compound Interest", "Built-in Functions List", "Loop", "Python Tutorial", "Python Standard Library", "Python Language Reference", "Exception Handling", "type", "try except", "sort", "remove", "pop", "lower", "insert", "for", "del", "append", "PEP 8 - Style Guide Python", "Snake Case", "Camel Case", "while", "upper", "title", "reverse", "len", "int", "dict", "Python Control Flow", "Python HOWTOs", "Overtime", "String Format", "String Concatenation", "Slice", "Order of Operations", "Nested Conditional", "Methods", "Function vs Method", "FOR and IN", "Error Code", "Dictionary", "Debugging", "Debugging under IDLE", "Custom Functions", "Conditional Execution", "Coding Floats", "Bitwise Operators", "values", "update", "type_map", "strip", "startswith", "Square Brackets", "split", "sep", "return", "replace", "removeprefix", "range", "none", "max", "match", "map", "main", "lambda", "isinstance", "isdigit", "input", "index", "guess_type", "get", "find", "endswith", "end", "depend", "def", "count", "copy", "convert", "continue", "clear", "case", "built-in tuple", "built-in list", "break", "Branch", "Backslash", "abs", "String Methods", "Turtle", "Python Resources List", "Media Type", "Math Examples", "Histogram", "Prime Number", "Sort Strings", "Reverse Strings", "Day of Year", "Virtual Environment Setup", "Type Conversion", "Tuple", "Suffix", "Short Circuit", "Sequence Types", "Scope of Functions", "Scalar", "Reserved Words", "Replacing List Elements", "Reference", "Recursion", "Parameters", "Operators", "Numbers", "Mutability", "Multiple Assignment", "Mimetype", "Logical Operator", "Logical Expressions", "Keyword", "Index Operator", "HTTP_2 Flow Control", "Guardian Pattern", "Functions", "Factorials", "Constants", "Conditional Statement", "Compound Statement", "Collection Variables", "chained conditional", "Binary", "Arguments", "The Bubble Sort", "Fibonacci Numbers"],
+      "paths": ["python-notebook/glossary/glossary.html", "python-notebook/reference/list.html", "python-notebook/notebook.html", "python-notebook/resources/examples/examples.html", "python-notebook/reference/string.html", "python-notebook/resources/examples/compound-interest.html", "python-notebook/resources/built-in-functions-list.html", "python-notebook/reference/loop.html", "python-notebook/resources/python-tutorial.html", "python-notebook/resources/python-standard-library.html", "python-notebook/resources/python-language-reference.html", "python-notebook/reference/exception-handling.html", "python-notebook/glossary/type.html", "python-notebook/glossary/try-except.html", "python-notebook/glossary/sort.html", "python-notebook/glossary/remove.html", "python-notebook/glossary/pop.html", "python-notebook/glossary/lower.html", "python-notebook/glossary/insert.html", "python-notebook/glossary/for.html", "python-notebook/glossary/del.html", "python-notebook/glossary/append.html", "python-notebook/resources/pep-8-style-guide-python.html", "python-notebook/reference/snake-case.html", "python-notebook/reference/camel-case.html", "python-notebook/glossary/while.html", "python-notebook/glossary/upper.html", "python-notebook/glossary/title.html", "python-notebook/glossary/reverse.html", "python-notebook/glossary/len.html", "python-notebook/glossary/int.html", "python-notebook/glossary/dict.html", "python-notebook/resources/python-control-flow.html", "python-notebook/resources/python-howtos.html", "python-notebook/resources/examples/overtime.html", "python-notebook/reference/string-format.html", "python-notebook/reference/string-concatenation.html", "python-notebook/reference/slice.html", "python-notebook/reference/order-of-operations.html", "python-notebook/reference/nested-conditional.html", "python-notebook/reference/methods.html", "python-notebook/reference/function-vs-method.html", "python-notebook/reference/for-and-in.html", "python-notebook/reference/error-code.html", "python-notebook/reference/dictionary.html", "python-notebook/reference/debugging.html", "python-notebook/reference/debugging-under-idle.html", "python-notebook/reference/custom-functions.html", "python-notebook/reference/conditional-execution.html", "python-notebook/reference/coding-floats.html", "python-notebook/reference/bitwise-operators.html", "python-notebook/glossary/values.html", "python-notebook/glossary/update.html", "python-notebook/glossary/type_map.html", "python-notebook/glossary/strip.html", "python-notebook/glossary/startswith.html", "python-notebook/glossary/square-brackets.html", "python-notebook/glossary/split.html", "python-notebook/glossary/sep.html", "python-notebook/glossary/return.html", "python-notebook/glossary/replace.html", "python-notebook/glossary/removeprefix.html", "python-notebook/glossary/range.html", "python-notebook/glossary/none.html", "python-notebook/glossary/max.html", "python-notebook/glossary/match.html", "python-notebook/glossary/map.html", "python-notebook/glossary/main.html", "python-notebook/glossary/lambda.html", "python-notebook/glossary/isinstance.html", "python-notebook/glossary/isdigit.html", "python-notebook/glossary/input.html", "python-notebook/glossary/index.html", "python-notebook/glossary/guess_type.html", "python-notebook/glossary/get.html", "python-notebook/glossary/find.html", "python-notebook/glossary/endswith.html", "python-notebook/glossary/end.html", "python-notebook/glossary/depend.html", "python-notebook/glossary/def.html", "python-notebook/glossary/count.html", "python-notebook/glossary/copy.html", "python-notebook/glossary/convert.html", "python-notebook/glossary/continue.html", "python-notebook/glossary/clear.html", "python-notebook/glossary/case.html", "python-notebook/glossary/built-in-tuple.html", "python-notebook/glossary/built-in-list.html", "python-notebook/glossary/break.html", "python-notebook/glossary/branch.html", "python-notebook/glossary/backslash.html", "python-notebook/glossary/abs.html", "python-notebook/resources/string-methods.html", "python-notebook/resources/turtle.html", "python-notebook/resources/python-resources-list.html", "python-notebook/resources/media-type.html", "python-notebook/resources/examples/math-examples.html", "python-notebook/resources/examples/histogram.html", "python-notebook/resources/examples/prime-number.html", "python-notebook/resources/examples/sort-strings.html", "python-notebook/resources/examples/reverse-strings.html", "python-notebook/resources/examples/day-of-year.html", "python-notebook/reference/virtual-environment-setup.html", "python-notebook/reference/type-conversion.html", "python-notebook/reference/tuple.html", "python-notebook/reference/suffix.html", "python-notebook/reference/short-circuit.html", "python-notebook/reference/sequence-types.html", "python-notebook/reference/scope-of-functions.html", "python-notebook/reference/scalar.html", "python-notebook/reference/reserved-words.html", "python-notebook/reference/replacing-list-elements.html", "python-notebook/reference/reference.html", "python-notebook/reference/recursion.html", "python-notebook/reference/parameters.html", "python-notebook/reference/operators.html", "python-notebook/reference/numbers.html", "python-notebook/reference/mutability.html", "python-notebook/reference/multiple-assignment.html", "python-notebook/reference/mimetype.html", "python-notebook/reference/logical-operator.html", "python-notebook/reference/logical-expressions.html", "python-notebook/reference/keyword.html", "python-notebook/reference/index-operator.html", "python-notebook/reference/http_2-flow-control.html", "python-notebook/reference/guardian-pattern.html", "python-notebook/reference/functions.html", "python-notebook/reference/factorials.html", "python-notebook/reference/constants.html", "python-notebook/reference/conditional-statement.html", "python-notebook/reference/compound-statement.html", "python-notebook/reference/collection-variables.html", "python-notebook/reference/chained-conditional.html", "python-notebook/reference/binary.html", "python-notebook/reference/arguments.html", "python-notebook/reference/algorithms/the-bubble-sort.html", "python-notebook/reference/algorithms/fibonacci-numbers.html"],
+      "linkSources": [21, 20, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 16, 15, 28, 14, 27, 13, 13, 12, 12, 26, 24, 24, 47, 45, 11, 1, 1, 1, 1, 1, 1, 1, 1, 7, 7, 7, 7, 40, 39, 38, 23, 4, 4, 4, 6, 6, 6, 6, 10, 10, 9, 5, 5, 5, 3, 3, 3, 3, 2, 2, 2, 2],
+      "linkTargets": [1, 1, 44, 91, 21, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 20, 78, 31, 77, 76, 75, 19, 74, 0, 73, 72, 71, 18, 30, 70, 69, 68, 29, 17, 67, 66, 65, 64, 63, 16, 62, 15, 61, 60, 59, 28, 58, 14, 57, 56, 55, 54, 27, 13, 53, 12, 52, 26, 51, 25, 1, 1, 1, 1, 1, 17, 43, 11, 2, 49, 17, 23, 22, 2, 46, 11, 21, 18, 20, 16, 15, 14, 19, 37, 19, 42, 2, 25, 41, 48, 2, 22, 36, 4, 35, 9, 8, 10, 33, 8, 9, 8, 2, 30, 4, 5, 3, 34, 50, 2, 32, 1, 29]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Python Notebook</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="python-notebook"><span class="tree-item-title">Python Notebook</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/glossary"><span class="tree-item-title">Glossary</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/abs.html"><span class="tree-item-title">abs</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/append.html"><span class="tree-item-title">append</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/backslash.html"><span class="tree-item-title">Backslash</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/branch.html"><span class="tree-item-title">Branch</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/break.html"><span class="tree-item-title">break</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/built-in-list.html"><span class="tree-item-title">built-in list</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/built-in-tuple.html"><span class="tree-item-title">built-in tuple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/case.html"><span class="tree-item-title">case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/clear.html"><span class="tree-item-title">clear</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/continue.html"><span class="tree-item-title">continue</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/convert.html"><span class="tree-item-title">convert</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/copy.html"><span class="tree-item-title">copy</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/count.html"><span class="tree-item-title">count</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/def.html"><span class="tree-item-title">def</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/del.html"><span class="tree-item-title">del</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/depend.html"><span class="tree-item-title">depend</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/dict.html"><span class="tree-item-title">dict</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/end.html"><span class="tree-item-title">end</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/endswith.html"><span class="tree-item-title">endswith</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/find.html"><span class="tree-item-title">find</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/for.html"><span class="tree-item-title">for</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/get.html"><span class="tree-item-title">get</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/glossary.html"><span class="tree-item-title">Glossary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/guess_type.html"><span class="tree-item-title">guess_type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/index.html"><span class="tree-item-title">index</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/input.html"><span class="tree-item-title">input</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/insert.html"><span class="tree-item-title">insert</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/int.html"><span class="tree-item-title">int</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/isdigit.html"><span class="tree-item-title">isdigit</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/isinstance.html"><span class="tree-item-title">isinstance</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/lambda.html"><span class="tree-item-title">lambda</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/len.html"><span class="tree-item-title">len</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/lower.html"><span class="tree-item-title">lower</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/main.html"><span class="tree-item-title">main</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/map.html"><span class="tree-item-title">map</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/match.html"><span class="tree-item-title">match</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/max.html"><span class="tree-item-title">max</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/none.html"><span class="tree-item-title">none</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/pop.html"><span class="tree-item-title">pop</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/range.html"><span class="tree-item-title">range</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/remove.html"><span class="tree-item-title">remove</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/removeprefix.html"><span class="tree-item-title">removeprefix</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/replace.html"><span class="tree-item-title">replace</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/return.html"><span class="tree-item-title">return</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/reverse.html"><span class="tree-item-title">reverse</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/sep.html"><span class="tree-item-title">sep</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/sort.html"><span class="tree-item-title">sort</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/split.html"><span class="tree-item-title">split</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/square-brackets.html"><span class="tree-item-title">Square Brackets</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/startswith.html"><span class="tree-item-title">startswith</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/strip.html"><span class="tree-item-title">strip</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/title.html"><span class="tree-item-title">title</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/try-except.html"><span class="tree-item-title">try except</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/type.html"><span class="tree-item-title">type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/type_map.html"><span class="tree-item-title">type_map</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/update.html"><span class="tree-item-title">update</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/upper.html"><span class="tree-item-title">upper</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/values.html"><span class="tree-item-title">values</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/while.html"><span class="tree-item-title">while</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/reference"><span class="tree-item-title">Reference</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="python-notebook/reference/algorithms"><span class="tree-item-title">Algorithms</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/algorithms/fibonacci-numbers.html"><span class="tree-item-title">Fibonacci Numbers</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/algorithms/the-bubble-sort.html"><span class="tree-item-title">The Bubble Sort</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/arguments.html"><span class="tree-item-title">Arguments</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/binary.html"><span class="tree-item-title">Binary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/bitwise-operators.html"><span class="tree-item-title">Bitwise Operators</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/camel-case.html"><span class="tree-item-title">Camel Case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/chained-conditional.html"><span class="tree-item-title">chained conditional</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/coding-floats.html"><span class="tree-item-title">Coding Floats</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/collection-variables.html"><span class="tree-item-title">Collection Variables</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/compound-statement.html"><span class="tree-item-title">Compound Statement</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/conditional-execution.html"><span class="tree-item-title">Conditional Execution</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/conditional-statement.html"><span class="tree-item-title">Conditional Statement</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/constants.html"><span class="tree-item-title">Constants</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/custom-functions.html"><span class="tree-item-title">Custom Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/debugging.html"><span class="tree-item-title">Debugging</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/debugging-under-idle.html"><span class="tree-item-title">Debugging under IDLE</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/dictionary.html"><span class="tree-item-title">Dictionary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/error-code.html"><span class="tree-item-title">Error Code</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/exception-handling.html"><span class="tree-item-title">Exception Handling</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/factorials.html"><span class="tree-item-title">Factorials</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/for-and-in.html"><span class="tree-item-title">FOR and IN</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/function-vs-method.html"><span class="tree-item-title">Function vs Method</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/functions.html"><span class="tree-item-title">Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/guardian-pattern.html"><span class="tree-item-title">Guardian Pattern</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/http_2-flow-control.html"><span class="tree-item-title">HTTP_2 Flow Control</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/index-operator.html"><span class="tree-item-title">Index Operator</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/keyword.html"><span class="tree-item-title">Keyword</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/list.html"><span class="tree-item-title">List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/logical-expressions.html"><span class="tree-item-title">Logical Expressions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/logical-operator.html"><span class="tree-item-title">Logical Operator</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/loop.html"><span class="tree-item-title">Loop</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/methods.html"><span class="tree-item-title">Methods</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/mimetype.html"><span class="tree-item-title">Mimetype</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/multiple-assignment.html"><span class="tree-item-title">Multiple Assignment</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/mutability.html"><span class="tree-item-title">Mutability</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/nested-conditional.html"><span class="tree-item-title">Nested Conditional</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/numbers.html"><span class="tree-item-title">Numbers</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/operators.html"><span class="tree-item-title">Operators</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/order-of-operations.html"><span class="tree-item-title">Order of Operations</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/parameters.html"><span class="tree-item-title">Parameters</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/recursion.html"><span class="tree-item-title">Recursion</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/reference.html"><span class="tree-item-title">Reference</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/replacing-list-elements.html"><span class="tree-item-title">Replacing List Elements</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/reserved-words.html"><span class="tree-item-title">Reserved Words</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/scalar.html"><span class="tree-item-title">Scalar</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/scope-of-functions.html"><span class="tree-item-title">Scope of Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/sequence-types.html"><span class="tree-item-title">Sequence Types</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/short-circuit.html"><span class="tree-item-title">Short Circuit</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/slice.html"><span class="tree-item-title">Slice</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/snake-case.html"><span class="tree-item-title">Snake Case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string.html"><span class="tree-item-title">String</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string-concatenation.html"><span class="tree-item-title">String Concatenation</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string-format.html"><span class="tree-item-title">String Format</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/suffix.html"><span class="tree-item-title">Suffix</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/tuple.html"><span class="tree-item-title">Tuple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/type-conversion.html"><span class="tree-item-title">Type Conversion</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/virtual-environment-setup.html"><span class="tree-item-title">Virtual Environment Setup</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/resources"><span class="tree-item-title">Resources</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="python-notebook/resources/examples"><span class="tree-item-title">Examples</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/compound-interest.html"><span class="tree-item-title">Compound Interest</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/day-of-year.html"><span class="tree-item-title">Day of Year</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/examples.html"><span class="tree-item-title">Examples</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/histogram.html"><span class="tree-item-title">Histogram</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/math-examples.html"><span class="tree-item-title">Math Examples</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/overtime.html"><span class="tree-item-title">Overtime</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/prime-number.html"><span class="tree-item-title">Prime Number</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/reverse-strings.html"><span class="tree-item-title">Reverse Strings</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/sort-strings.html"><span class="tree-item-title">Sort Strings</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/built-in-functions-list.html"><span class="tree-item-title">Built-in Functions List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/media-type.html"><span class="tree-item-title">Media Type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/pep-8-style-guide-python.html"><span class="tree-item-title">PEP 8 - Style Guide Python</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-control-flow.html"><span class="tree-item-title">Python Control Flow</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-howtos.html"><span class="tree-item-title">Python HOWTOs</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-language-reference.html"><span class="tree-item-title">Python Language Reference</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-resources-list.html"><span class="tree-item-title">Python Resources List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-standard-library.html"><span class="tree-item-title">Python Standard Library</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-tutorial.html"><span class="tree-item-title">Python Tutorial</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/string-methods.html"><span class="tree-item-title">String Methods</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/turtle.html"><span class="tree-item-title">Turtle</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/notebook.html"><span class="tree-item-title">Notebook</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <pre class="frontmatter language-yaml" tabindex="0" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">category</span><span class="token punctuation">:</span> library
+<span class="token key atrule">subject</span><span class="token punctuation">:</span> python
+<span class="token key atrule">type</span><span class="token punctuation">:</span> resource
+<span class="token key atrule">tag</span><span class="token punctuation">:</span> lecture11
+<span class="token key atrule">tags</span><span class="token punctuation">:</span> lecture1
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token datetime number">2022-02-06</span><span class="token punctuation">]</span><span class="token punctuation">]</span></code><button class="copy-code-button">Copy</button></pre>
+            <div class="frontmatter-container">
+              <div class="frontmatter-container-header">
+                <div class="frontmatter-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Metadata
+              </div>
+              <div class="frontmatter-section mod-tags"><span class="frontmatter-section-label">Tags</span>
+                <div class="frontmatter-section-data frontmatter-section-tags"><a class="tag" target="_blank" rel="noopener" href="#lecture11">#lecture11</a></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">category</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">library</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">subject</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">python</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">type</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">resource</span></div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div>
+            <h1 data-heading="The Python Language Reference[](https://docs.python.org/3/reference/index.html#the-python-language-reference &quot;Permalink to this headline&quot;)" id="The_Python_Language_Reference">The Python Language Reference<a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/index.html#the-python-language-reference" rel="noopener" class="external-link" title="Permalink to this headline" href="https://docs.python.org/3/reference/index.html#the-python-language-reference" target="_blank"></a></h1>
+          </div>
+          <div>
+            <p>This reference manual describes the syntax and “core semantics” of the language. It is terse, but attempts to be exact and complete. The semantics of non-essential built-in object types and of the built-in functions and modules are described in&nbsp;<a data-tooltip-position="top" aria-label="https://docs.python.org/3/library/index.html#library-index" rel="noopener" class="external-link" href="https://docs.python.org/3/library/index.html#library-index" target="_blank">The Python Standard Library</a>. For an informal introduction to the language, see&nbsp;<a data-tooltip-position="top" aria-label="https://docs.python.org/3/tutorial/index.html#tutorial-index" rel="noopener" class="external-link" href="https://docs.python.org/3/tutorial/index.html#tutorial-index" target="_blank">The Python Tutorial</a>. For C or C++ programmers, two additional manuals exist:&nbsp;<a data-tooltip-position="top" aria-label="https://docs.python.org/3/extending/index.html#extending-index" rel="noopener" class="external-link" href="https://docs.python.org/3/extending/index.html#extending-index" target="_blank">Extending and Embedding the Python Interpreter</a>&nbsp;describes the high-level picture of how to write a Python extension module, and the&nbsp;<a data-tooltip-position="top" aria-label="https://docs.python.org/3/c-api/index.html#c-api-index" rel="noopener" class="external-link" href="https://docs.python.org/3/c-api/index.html#c-api-index" target="_blank">Python/C API Reference Manual</a>&nbsp;describes the interfaces available to C/C++ programmers in detail.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/introduction.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/introduction.html" target="_blank">1. Introduction</a>
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/introduction.html#alternate-implementations" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/introduction.html#alternate-implementations" target="_blank">1.1. Alternate Implementations</a>
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/introduction.html#notation" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/introduction.html#notation" target="_blank">1.2. Notation</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/lexical_analysis.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/lexical_analysis.html" target="_blank">2. Lexical analysis</a>
+                <ul class="has-list-bullet">
+                  <li data-line="4">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/lexical_analysis.html#line-structure" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/lexical_analysis.html#line-structure" target="_blank">2.1. Line structure</a>
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/lexical_analysis.html#other-tokens" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/lexical_analysis.html#other-tokens" target="_blank">2.2. Other tokens</a>
+                  </li>
+                  <li data-line="6">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/lexical_analysis.html#identifiers" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/lexical_analysis.html#identifiers" target="_blank">2.3. Identifiers and keywords</a>
+                  </li>
+                  <li data-line="7">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/lexical_analysis.html#literals" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/lexical_analysis.html#literals" target="_blank">2.4. Literals</a>
+                  </li>
+                  <li data-line="8">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/lexical_analysis.html#operators" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/lexical_analysis.html#operators" target="_blank">2.5. Operators</a>
+                  </li>
+                  <li data-line="9">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/lexical_analysis.html#delimiters" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/lexical_analysis.html#delimiters" target="_blank">2.6. Delimiters</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="10">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/datamodel.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/datamodel.html" target="_blank">3. Data model</a>
+                <ul class="has-list-bullet">
+                  <li data-line="11">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/datamodel.html#objects-values-and-types" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/datamodel.html#objects-values-and-types" target="_blank">3.1. Objects, values and types</a>
+                  </li>
+                  <li data-line="12">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy" target="_blank">3.2. The standard type hierarchy</a>
+                  </li>
+                  <li data-line="13">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/datamodel.html#special-method-names" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/datamodel.html#special-method-names" target="_blank">3.3. Special method names</a>
+                  </li>
+                  <li data-line="14">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/datamodel.html#coroutines" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/datamodel.html#coroutines" target="_blank">3.4. Coroutines</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="15">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/executionmodel.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/executionmodel.html" target="_blank">4. Execution model</a>
+                <ul class="has-list-bullet">
+                  <li data-line="16">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/executionmodel.html#structure-of-a-program" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/executionmodel.html#structure-of-a-program" target="_blank">4.1. Structure of a program</a>
+                  </li>
+                  <li data-line="17">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/executionmodel.html#naming-and-binding" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/executionmodel.html#naming-and-binding" target="_blank">4.2. Naming and binding</a>
+                  </li>
+                  <li data-line="18">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/executionmodel.html#exceptions" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/executionmodel.html#exceptions" target="_blank">4.3. Exceptions</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="19">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html" target="_blank">5. The import system</a>
+                <ul class="has-list-bullet">
+                  <li data-line="20">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html#importlib" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html#importlib" target="_blank">5.1.&nbsp;<code>importlib</code></a>
+                  </li>
+                  <li data-line="21">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html#packages" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html#packages" target="_blank">5.2. Packages</a>
+                  </li>
+                  <li data-line="22">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html#searching" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html#searching" target="_blank">5.3. Searching</a>
+                  </li>
+                  <li data-line="23">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html#loading" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html#loading" target="_blank">5.4. Loading</a>
+                  </li>
+                  <li data-line="24">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html#the-path-based-finder" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html#the-path-based-finder" target="_blank">5.5. The Path Based Finder</a>
+                  </li>
+                  <li data-line="25">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html#replacing-the-standard-import-system" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html#replacing-the-standard-import-system" target="_blank">5.6. Replacing the standard import system</a>
+                  </li>
+                  <li data-line="26">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html#package-relative-imports" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html#package-relative-imports" target="_blank">5.7. Package Relative Imports</a>
+                  </li>
+                  <li data-line="27">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html#special-considerations-for-main" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html#special-considerations-for-main" target="_blank">5.8. Special considerations for <strong>main</strong></a>
+                  </li>
+                  <li data-line="28">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/import.html#references" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/import.html#references" target="_blank">5.9. References</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="29">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html" target="_blank">6. Expressions</a>
+                <ul class="has-list-bullet">
+                  <li data-line="30">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#arithmetic-conversions" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#arithmetic-conversions" target="_blank">6.1. Arithmetic conversions</a>
+                  </li>
+                  <li data-line="31">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#atoms" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#atoms" target="_blank">6.2. Atoms</a>
+                  </li>
+                  <li data-line="32">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#primaries" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#primaries" target="_blank">6.3. Primaries</a>
+                  </li>
+                  <li data-line="33">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#await-expression" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#await-expression" target="_blank">6.4. Await expression</a>
+                  </li>
+                  <li data-line="34">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#the-power-operator" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#the-power-operator" target="_blank">6.5. The power operator</a>
+                  </li>
+                  <li data-line="35">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#unary-arithmetic-and-bitwise-operations" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#unary-arithmetic-and-bitwise-operations" target="_blank">6.6. Unary arithmetic and bitwise operations</a>
+                  </li>
+                  <li data-line="36">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations" target="_blank">6.7. Binary arithmetic operations</a>
+                  </li>
+                  <li data-line="37">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#shifting-operations" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#shifting-operations" target="_blank">6.8. Shifting operations</a>
+                  </li>
+                  <li data-line="38">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#binary-bitwise-operations" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#binary-bitwise-operations" target="_blank">6.9. Binary bitwise operations</a>
+                  </li>
+                  <li data-line="39">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#comparisons" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#comparisons" target="_blank">6.10. Comparisons</a>
+                  </li>
+                  <li data-line="40">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#boolean-operations" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#boolean-operations" target="_blank">6.11. Boolean operations</a>
+                  </li>
+                  <li data-line="41">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#assignment-expressions" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#assignment-expressions" target="_blank">6.12. Assignment expressions</a>
+                  </li>
+                  <li data-line="42">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#conditional-expressions" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#conditional-expressions" target="_blank">6.13. Conditional expressions</a>
+                  </li>
+                  <li data-line="43">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#lambda" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#lambda" target="_blank">6.14. Lambdas</a>
+                  </li>
+                  <li data-line="44">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#expression-lists" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#expression-lists" target="_blank">6.15. Expression lists</a>
+                  </li>
+                  <li data-line="45">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#evaluation-order" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#evaluation-order" target="_blank">6.16. Evaluation order</a>
+                  </li>
+                  <li data-line="46">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/expressions.html#operator-precedence" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/expressions.html#operator-precedence" target="_blank">6.17. Operator precedence</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="47">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html" target="_blank">7. Simple statements</a>
+                <ul class="has-list-bullet">
+                  <li data-line="48">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#expression-statements" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#expression-statements" target="_blank">7.1. Expression statements</a>
+                  </li>
+                  <li data-line="49">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#assignment-statements" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#assignment-statements" target="_blank">7.2. Assignment statements</a>
+                  </li>
+                  <li data-line="50">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement" target="_blank">7.3. The&nbsp;<code>assert</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="51">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-pass-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-pass-statement" target="_blank">7.4. The&nbsp;<code>pass</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="52">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-del-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-del-statement" target="_blank">7.5. The&nbsp;<code>del</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="53">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-return-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-return-statement" target="_blank">7.6. The&nbsp;<code>return</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="54">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-yield-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-yield-statement" target="_blank">7.7. The&nbsp;<code>yield</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="55">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement" target="_blank">7.8. The&nbsp;<code>raise</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="56">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-break-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-break-statement" target="_blank">7.9. The&nbsp;<code>break</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="57">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-continue-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-continue-statement" target="_blank">7.10. The&nbsp;<code>continue</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="58">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-import-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-import-statement" target="_blank">7.11. The&nbsp;<code>import</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="59">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-global-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-global-statement" target="_blank">7.12. The&nbsp;<code>global</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="60">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/simple_stmts.html#the-nonlocal-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/simple_stmts.html#the-nonlocal-statement" target="_blank">7.13. The&nbsp;<code>nonlocal</code>&nbsp;statement</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="61">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html" target="_blank">8. Compound statements</a>
+                <ul class="has-list-bullet">
+                  <li data-line="62">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html#the-if-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html#the-if-statement" target="_blank">8.1. The&nbsp;<code>if</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="63">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html#the-while-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html#the-while-statement" target="_blank">8.2. The&nbsp;<code>while</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="64">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html#the-for-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html#the-for-statement" target="_blank">8.3. The&nbsp;<code>for</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="65">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html#the-try-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html#the-try-statement" target="_blank">8.4. The&nbsp;<code>try</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="66">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html#the-with-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html#the-with-statement" target="_blank">8.5. The&nbsp;<code>with</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="67">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html#the-match-statement" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html#the-match-statement" target="_blank">8.6. The&nbsp;<code>match</code>&nbsp;statement</a>
+                  </li>
+                  <li data-line="68">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html#function-definitions" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html#function-definitions" target="_blank">8.7. Function definitions</a>
+                  </li>
+                  <li data-line="69">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html#class-definitions" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html#class-definitions" target="_blank">8.8. Class definitions</a>
+                  </li>
+                  <li data-line="70">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/compound_stmts.html#coroutines" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/compound_stmts.html#coroutines" target="_blank">8.9. Coroutines</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="71">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/toplevel_components.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/toplevel_components.html" target="_blank">9. Top-level components</a>
+                <ul class="has-list-bullet">
+                  <li data-line="72">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/toplevel_components.html#complete-python-programs" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/toplevel_components.html#complete-python-programs" target="_blank">9.1. Complete Python programs</a>
+                  </li>
+                  <li data-line="73">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/toplevel_components.html#file-input" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/toplevel_components.html#file-input" target="_blank">9.2. File input</a>
+                  </li>
+                  <li data-line="74">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/toplevel_components.html#interactive-input" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/toplevel_components.html#interactive-input" target="_blank">9.3. Interactive input</a>
+                  </li>
+                  <li data-line="75">
+                    <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/toplevel_components.html#expression-input" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/toplevel_components.html#expression-input" target="_blank">9.4. Expression input</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="76">
+                <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="https://docs.python.org/3/reference/grammar.html" rel="noopener" class="external-link" href="https://docs.python.org/3/reference/grammar.html" target="_blank">10. Full Grammar specification</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#The_Python_Language_Reference[](https://docs.python.org/3/reference/index.html#the-python-language-reference_&quot;Permalink_to_this_headline&quot;)"><span class="tree-item-title">The Python Language Reference[](https://docs.python.org/3/reference/index.html#the-python-language-reference "Permalink to this headline")</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

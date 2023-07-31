@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Short Circuit</title>
+  <base href="../../">
+  <meta id="root-path" root-path="../../">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style> </style>
+
+
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 137,
+      "linkCount": 115,
+      "radii": [7, 5.222222222222222, 4.493055555555555, 3.7899305555555554, 3.7899305555555554, 3.6388888888888893, 3.6388888888888893, 3.6388888888888893, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "labels": ["Glossary", "List", "Notebook", "Examples", "String", "Compound Interest", "Built-in Functions List", "Loop", "Python Tutorial", "Python Standard Library", "Python Language Reference", "Exception Handling", "type", "try except", "sort", "remove", "pop", "lower", "insert", "for", "del", "append", "PEP 8 - Style Guide Python", "Snake Case", "Camel Case", "while", "upper", "title", "reverse", "len", "int", "dict", "Python Control Flow", "Python HOWTOs", "Overtime", "String Format", "String Concatenation", "Slice", "Order of Operations", "Nested Conditional", "Methods", "Function vs Method", "FOR and IN", "Error Code", "Dictionary", "Debugging", "Debugging under IDLE", "Custom Functions", "Conditional Execution", "Coding Floats", "Bitwise Operators", "values", "update", "type_map", "strip", "startswith", "Square Brackets", "split", "sep", "return", "replace", "removeprefix", "range", "none", "max", "match", "map", "main", "lambda", "isinstance", "isdigit", "input", "index", "guess_type", "get", "find", "endswith", "end", "depend", "def", "count", "copy", "convert", "continue", "clear", "case", "built-in tuple", "built-in list", "break", "Branch", "Backslash", "abs", "String Methods", "Turtle", "Python Resources List", "Media Type", "Math Examples", "Histogram", "Prime Number", "Sort Strings", "Reverse Strings", "Day of Year", "Virtual Environment Setup", "Type Conversion", "Tuple", "Suffix", "Short Circuit", "Sequence Types", "Scope of Functions", "Scalar", "Reserved Words", "Replacing List Elements", "Reference", "Recursion", "Parameters", "Operators", "Numbers", "Mutability", "Multiple Assignment", "Mimetype", "Logical Operator", "Logical Expressions", "Keyword", "Index Operator", "HTTP_2 Flow Control", "Guardian Pattern", "Functions", "Factorials", "Constants", "Conditional Statement", "Compound Statement", "Collection Variables", "chained conditional", "Binary", "Arguments", "The Bubble Sort", "Fibonacci Numbers"],
+      "paths": ["python-notebook/glossary/glossary.html", "python-notebook/reference/list.html", "python-notebook/notebook.html", "python-notebook/resources/examples/examples.html", "python-notebook/reference/string.html", "python-notebook/resources/examples/compound-interest.html", "python-notebook/resources/built-in-functions-list.html", "python-notebook/reference/loop.html", "python-notebook/resources/python-tutorial.html", "python-notebook/resources/python-standard-library.html", "python-notebook/resources/python-language-reference.html", "python-notebook/reference/exception-handling.html", "python-notebook/glossary/type.html", "python-notebook/glossary/try-except.html", "python-notebook/glossary/sort.html", "python-notebook/glossary/remove.html", "python-notebook/glossary/pop.html", "python-notebook/glossary/lower.html", "python-notebook/glossary/insert.html", "python-notebook/glossary/for.html", "python-notebook/glossary/del.html", "python-notebook/glossary/append.html", "python-notebook/resources/pep-8-style-guide-python.html", "python-notebook/reference/snake-case.html", "python-notebook/reference/camel-case.html", "python-notebook/glossary/while.html", "python-notebook/glossary/upper.html", "python-notebook/glossary/title.html", "python-notebook/glossary/reverse.html", "python-notebook/glossary/len.html", "python-notebook/glossary/int.html", "python-notebook/glossary/dict.html", "python-notebook/resources/python-control-flow.html", "python-notebook/resources/python-howtos.html", "python-notebook/resources/examples/overtime.html", "python-notebook/reference/string-format.html", "python-notebook/reference/string-concatenation.html", "python-notebook/reference/slice.html", "python-notebook/reference/order-of-operations.html", "python-notebook/reference/nested-conditional.html", "python-notebook/reference/methods.html", "python-notebook/reference/function-vs-method.html", "python-notebook/reference/for-and-in.html", "python-notebook/reference/error-code.html", "python-notebook/reference/dictionary.html", "python-notebook/reference/debugging.html", "python-notebook/reference/debugging-under-idle.html", "python-notebook/reference/custom-functions.html", "python-notebook/reference/conditional-execution.html", "python-notebook/reference/coding-floats.html", "python-notebook/reference/bitwise-operators.html", "python-notebook/glossary/values.html", "python-notebook/glossary/update.html", "python-notebook/glossary/type_map.html", "python-notebook/glossary/strip.html", "python-notebook/glossary/startswith.html", "python-notebook/glossary/square-brackets.html", "python-notebook/glossary/split.html", "python-notebook/glossary/sep.html", "python-notebook/glossary/return.html", "python-notebook/glossary/replace.html", "python-notebook/glossary/removeprefix.html", "python-notebook/glossary/range.html", "python-notebook/glossary/none.html", "python-notebook/glossary/max.html", "python-notebook/glossary/match.html", "python-notebook/glossary/map.html", "python-notebook/glossary/main.html", "python-notebook/glossary/lambda.html", "python-notebook/glossary/isinstance.html", "python-notebook/glossary/isdigit.html", "python-notebook/glossary/input.html", "python-notebook/glossary/index.html", "python-notebook/glossary/guess_type.html", "python-notebook/glossary/get.html", "python-notebook/glossary/find.html", "python-notebook/glossary/endswith.html", "python-notebook/glossary/end.html", "python-notebook/glossary/depend.html", "python-notebook/glossary/def.html", "python-notebook/glossary/count.html", "python-notebook/glossary/copy.html", "python-notebook/glossary/convert.html", "python-notebook/glossary/continue.html", "python-notebook/glossary/clear.html", "python-notebook/glossary/case.html", "python-notebook/glossary/built-in-tuple.html", "python-notebook/glossary/built-in-list.html", "python-notebook/glossary/break.html", "python-notebook/glossary/branch.html", "python-notebook/glossary/backslash.html", "python-notebook/glossary/abs.html", "python-notebook/resources/string-methods.html", "python-notebook/resources/turtle.html", "python-notebook/resources/python-resources-list.html", "python-notebook/resources/media-type.html", "python-notebook/resources/examples/math-examples.html", "python-notebook/resources/examples/histogram.html", "python-notebook/resources/examples/prime-number.html", "python-notebook/resources/examples/sort-strings.html", "python-notebook/resources/examples/reverse-strings.html", "python-notebook/resources/examples/day-of-year.html", "python-notebook/reference/virtual-environment-setup.html", "python-notebook/reference/type-conversion.html", "python-notebook/reference/tuple.html", "python-notebook/reference/suffix.html", "python-notebook/reference/short-circuit.html", "python-notebook/reference/sequence-types.html", "python-notebook/reference/scope-of-functions.html", "python-notebook/reference/scalar.html", "python-notebook/reference/reserved-words.html", "python-notebook/reference/replacing-list-elements.html", "python-notebook/reference/reference.html", "python-notebook/reference/recursion.html", "python-notebook/reference/parameters.html", "python-notebook/reference/operators.html", "python-notebook/reference/numbers.html", "python-notebook/reference/mutability.html", "python-notebook/reference/multiple-assignment.html", "python-notebook/reference/mimetype.html", "python-notebook/reference/logical-operator.html", "python-notebook/reference/logical-expressions.html", "python-notebook/reference/keyword.html", "python-notebook/reference/index-operator.html", "python-notebook/reference/http_2-flow-control.html", "python-notebook/reference/guardian-pattern.html", "python-notebook/reference/functions.html", "python-notebook/reference/factorials.html", "python-notebook/reference/constants.html", "python-notebook/reference/conditional-statement.html", "python-notebook/reference/compound-statement.html", "python-notebook/reference/collection-variables.html", "python-notebook/reference/chained-conditional.html", "python-notebook/reference/binary.html", "python-notebook/reference/arguments.html", "python-notebook/reference/algorithms/the-bubble-sort.html", "python-notebook/reference/algorithms/fibonacci-numbers.html"],
+      "linkSources": [21, 20, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 16, 15, 28, 14, 27, 13, 13, 12, 12, 26, 24, 24, 47, 45, 11, 1, 1, 1, 1, 1, 1, 1, 1, 7, 7, 7, 7, 40, 39, 38, 23, 4, 4, 4, 6, 6, 6, 6, 10, 10, 9, 5, 5, 5, 3, 3, 3, 3, 2, 2, 2, 2],
+      "linkTargets": [1, 1, 44, 91, 21, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 20, 78, 31, 77, 76, 75, 19, 74, 0, 73, 72, 71, 18, 30, 70, 69, 68, 29, 17, 67, 66, 65, 64, 63, 16, 62, 15, 61, 60, 59, 28, 58, 14, 57, 56, 55, 54, 27, 13, 53, 12, 52, 26, 51, 25, 1, 1, 1, 1, 1, 17, 43, 11, 2, 49, 17, 23, 22, 2, 46, 11, 21, 18, 20, 16, 15, 14, 19, 37, 19, 42, 2, 25, 41, 48, 2, 22, 36, 4, 35, 9, 8, 10, 33, 8, 9, 8, 2, 30, 4, 5, 3, 34, 50, 2, 32, 1, 29]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Python Notebook</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="python-notebook"><span class="tree-item-title">Python Notebook</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/glossary"><span class="tree-item-title">Glossary</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/abs.html"><span class="tree-item-title">abs</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/append.html"><span class="tree-item-title">append</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/backslash.html"><span class="tree-item-title">Backslash</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/branch.html"><span class="tree-item-title">Branch</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/break.html"><span class="tree-item-title">break</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/built-in-list.html"><span class="tree-item-title">built-in list</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/built-in-tuple.html"><span class="tree-item-title">built-in tuple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/case.html"><span class="tree-item-title">case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/clear.html"><span class="tree-item-title">clear</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/continue.html"><span class="tree-item-title">continue</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/convert.html"><span class="tree-item-title">convert</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/copy.html"><span class="tree-item-title">copy</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/count.html"><span class="tree-item-title">count</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/def.html"><span class="tree-item-title">def</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/del.html"><span class="tree-item-title">del</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/depend.html"><span class="tree-item-title">depend</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/dict.html"><span class="tree-item-title">dict</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/end.html"><span class="tree-item-title">end</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/endswith.html"><span class="tree-item-title">endswith</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/find.html"><span class="tree-item-title">find</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/for.html"><span class="tree-item-title">for</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/get.html"><span class="tree-item-title">get</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/glossary.html"><span class="tree-item-title">Glossary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/guess_type.html"><span class="tree-item-title">guess_type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/index.html"><span class="tree-item-title">index</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/input.html"><span class="tree-item-title">input</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/insert.html"><span class="tree-item-title">insert</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/int.html"><span class="tree-item-title">int</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/isdigit.html"><span class="tree-item-title">isdigit</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/isinstance.html"><span class="tree-item-title">isinstance</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/lambda.html"><span class="tree-item-title">lambda</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/len.html"><span class="tree-item-title">len</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/lower.html"><span class="tree-item-title">lower</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/main.html"><span class="tree-item-title">main</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/map.html"><span class="tree-item-title">map</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/match.html"><span class="tree-item-title">match</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/max.html"><span class="tree-item-title">max</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/none.html"><span class="tree-item-title">none</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/pop.html"><span class="tree-item-title">pop</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/range.html"><span class="tree-item-title">range</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/remove.html"><span class="tree-item-title">remove</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/removeprefix.html"><span class="tree-item-title">removeprefix</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/replace.html"><span class="tree-item-title">replace</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/return.html"><span class="tree-item-title">return</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/reverse.html"><span class="tree-item-title">reverse</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/sep.html"><span class="tree-item-title">sep</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/sort.html"><span class="tree-item-title">sort</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/split.html"><span class="tree-item-title">split</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/square-brackets.html"><span class="tree-item-title">Square Brackets</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/startswith.html"><span class="tree-item-title">startswith</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/strip.html"><span class="tree-item-title">strip</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/title.html"><span class="tree-item-title">title</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/try-except.html"><span class="tree-item-title">try except</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/type.html"><span class="tree-item-title">type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/type_map.html"><span class="tree-item-title">type_map</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/update.html"><span class="tree-item-title">update</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/upper.html"><span class="tree-item-title">upper</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/values.html"><span class="tree-item-title">values</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/while.html"><span class="tree-item-title">while</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/reference"><span class="tree-item-title">Reference</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="python-notebook/reference/algorithms"><span class="tree-item-title">Algorithms</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/algorithms/fibonacci-numbers.html"><span class="tree-item-title">Fibonacci Numbers</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/algorithms/the-bubble-sort.html"><span class="tree-item-title">The Bubble Sort</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/arguments.html"><span class="tree-item-title">Arguments</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/binary.html"><span class="tree-item-title">Binary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/bitwise-operators.html"><span class="tree-item-title">Bitwise Operators</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/camel-case.html"><span class="tree-item-title">Camel Case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/chained-conditional.html"><span class="tree-item-title">chained conditional</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/coding-floats.html"><span class="tree-item-title">Coding Floats</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/collection-variables.html"><span class="tree-item-title">Collection Variables</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/compound-statement.html"><span class="tree-item-title">Compound Statement</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/conditional-execution.html"><span class="tree-item-title">Conditional Execution</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/conditional-statement.html"><span class="tree-item-title">Conditional Statement</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/constants.html"><span class="tree-item-title">Constants</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/custom-functions.html"><span class="tree-item-title">Custom Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/debugging.html"><span class="tree-item-title">Debugging</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/debugging-under-idle.html"><span class="tree-item-title">Debugging under IDLE</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/dictionary.html"><span class="tree-item-title">Dictionary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/error-code.html"><span class="tree-item-title">Error Code</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/exception-handling.html"><span class="tree-item-title">Exception Handling</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/factorials.html"><span class="tree-item-title">Factorials</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/for-and-in.html"><span class="tree-item-title">FOR and IN</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/function-vs-method.html"><span class="tree-item-title">Function vs Method</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/functions.html"><span class="tree-item-title">Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/guardian-pattern.html"><span class="tree-item-title">Guardian Pattern</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/http_2-flow-control.html"><span class="tree-item-title">HTTP_2 Flow Control</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/index-operator.html"><span class="tree-item-title">Index Operator</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/keyword.html"><span class="tree-item-title">Keyword</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/list.html"><span class="tree-item-title">List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/logical-expressions.html"><span class="tree-item-title">Logical Expressions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/logical-operator.html"><span class="tree-item-title">Logical Operator</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/loop.html"><span class="tree-item-title">Loop</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/methods.html"><span class="tree-item-title">Methods</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/mimetype.html"><span class="tree-item-title">Mimetype</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/multiple-assignment.html"><span class="tree-item-title">Multiple Assignment</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/mutability.html"><span class="tree-item-title">Mutability</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/nested-conditional.html"><span class="tree-item-title">Nested Conditional</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/numbers.html"><span class="tree-item-title">Numbers</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/operators.html"><span class="tree-item-title">Operators</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/order-of-operations.html"><span class="tree-item-title">Order of Operations</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/parameters.html"><span class="tree-item-title">Parameters</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/recursion.html"><span class="tree-item-title">Recursion</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/reference.html"><span class="tree-item-title">Reference</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/replacing-list-elements.html"><span class="tree-item-title">Replacing List Elements</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/reserved-words.html"><span class="tree-item-title">Reserved Words</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/scalar.html"><span class="tree-item-title">Scalar</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/scope-of-functions.html"><span class="tree-item-title">Scope of Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/sequence-types.html"><span class="tree-item-title">Sequence Types</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/short-circuit.html"><span class="tree-item-title">Short Circuit</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/slice.html"><span class="tree-item-title">Slice</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/snake-case.html"><span class="tree-item-title">Snake Case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string.html"><span class="tree-item-title">String</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string-concatenation.html"><span class="tree-item-title">String Concatenation</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string-format.html"><span class="tree-item-title">String Format</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/suffix.html"><span class="tree-item-title">Suffix</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/tuple.html"><span class="tree-item-title">Tuple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/type-conversion.html"><span class="tree-item-title">Type Conversion</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/virtual-environment-setup.html"><span class="tree-item-title">Virtual Environment Setup</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/resources"><span class="tree-item-title">Resources</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="python-notebook/resources/examples"><span class="tree-item-title">Examples</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/compound-interest.html"><span class="tree-item-title">Compound Interest</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/day-of-year.html"><span class="tree-item-title">Day of Year</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/examples.html"><span class="tree-item-title">Examples</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/histogram.html"><span class="tree-item-title">Histogram</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/math-examples.html"><span class="tree-item-title">Math Examples</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/overtime.html"><span class="tree-item-title">Overtime</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/prime-number.html"><span class="tree-item-title">Prime Number</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/reverse-strings.html"><span class="tree-item-title">Reverse Strings</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/sort-strings.html"><span class="tree-item-title">Sort Strings</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/built-in-functions-list.html"><span class="tree-item-title">Built-in Functions List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/media-type.html"><span class="tree-item-title">Media Type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/pep-8-style-guide-python.html"><span class="tree-item-title">PEP 8 - Style Guide Python</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-control-flow.html"><span class="tree-item-title">Python Control Flow</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-howtos.html"><span class="tree-item-title">Python HOWTOs</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-language-reference.html"><span class="tree-item-title">Python Language Reference</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-resources-list.html"><span class="tree-item-title">Python Resources List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-standard-library.html"><span class="tree-item-title">Python Standard Library</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-tutorial.html"><span class="tree-item-title">Python Tutorial</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/string-methods.html"><span class="tree-item-title">String Methods</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/turtle.html"><span class="tree-item-title">Turtle</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/notebook.html"><span class="tree-item-title">Notebook</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <pre class="frontmatter language-yaml" tabindex="0" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">subject</span><span class="token punctuation">:</span> python
+<span class="token key atrule">category</span><span class="token punctuation">:</span> glossary
+<span class="token key atrule">type</span><span class="token punctuation">:</span> 
+<span class="token key atrule">tags</span><span class="token punctuation">:</span>
+<span class="token key atrule">date</span><span class="token punctuation">:</span> 14<span class="token punctuation">-</span>04<span class="token punctuation">-</span>2023 14<span class="token punctuation">:</span><span class="token number">01</span></code><button class="copy-code-button">Copy</button></pre>
+            <div class="frontmatter-container">
+              <div class="frontmatter-container-header">
+                <div class="frontmatter-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Metadata
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">subject</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">python</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">category</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">glossary</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">date</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">14-04-2023 14:01</span></div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div>
+            <h1 data-heading="Short Circuit" id="Short_Circuit">Short Circuit</h1>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p><a href="#shortcircuit" class="tag" target="_blank" rel="noopener">#shortcircuit</a></p>
+          </div>
+          <div>
+            <p>When Python is part-way through evaluating a logical expression and stops the evaluation because Python knows the finals value for the expression without needing to evaluate the rest of the expression. </p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Short_Circuit"><span class="tree-item-title">Short Circuit</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

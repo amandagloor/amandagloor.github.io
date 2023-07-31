@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Conditional Execution</title>
+  <base href="../../">
+  <meta id="root-path" root-path="../../">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style> </style>
+
+
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 137,
+      "linkCount": 115,
+      "radii": [7, 5.222222222222222, 4.493055555555555, 3.7899305555555554, 3.7899305555555554, 3.6388888888888893, 3.6388888888888893, 3.6388888888888893, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "labels": ["Glossary", "List", "Notebook", "Examples", "String", "Compound Interest", "Built-in Functions List", "Loop", "Python Tutorial", "Python Standard Library", "Python Language Reference", "Exception Handling", "type", "try except", "sort", "remove", "pop", "lower", "insert", "for", "del", "append", "PEP 8 - Style Guide Python", "Snake Case", "Camel Case", "while", "upper", "title", "reverse", "len", "int", "dict", "Python Control Flow", "Python HOWTOs", "Overtime", "String Format", "String Concatenation", "Slice", "Order of Operations", "Nested Conditional", "Methods", "Function vs Method", "FOR and IN", "Error Code", "Dictionary", "Debugging", "Debugging under IDLE", "Custom Functions", "Conditional Execution", "Coding Floats", "Bitwise Operators", "values", "update", "type_map", "strip", "startswith", "Square Brackets", "split", "sep", "return", "replace", "removeprefix", "range", "none", "max", "match", "map", "main", "lambda", "isinstance", "isdigit", "input", "index", "guess_type", "get", "find", "endswith", "end", "depend", "def", "count", "copy", "convert", "continue", "clear", "case", "built-in tuple", "built-in list", "break", "Branch", "Backslash", "abs", "String Methods", "Turtle", "Python Resources List", "Media Type", "Math Examples", "Histogram", "Prime Number", "Sort Strings", "Reverse Strings", "Day of Year", "Virtual Environment Setup", "Type Conversion", "Tuple", "Suffix", "Short Circuit", "Sequence Types", "Scope of Functions", "Scalar", "Reserved Words", "Replacing List Elements", "Reference", "Recursion", "Parameters", "Operators", "Numbers", "Mutability", "Multiple Assignment", "Mimetype", "Logical Operator", "Logical Expressions", "Keyword", "Index Operator", "HTTP_2 Flow Control", "Guardian Pattern", "Functions", "Factorials", "Constants", "Conditional Statement", "Compound Statement", "Collection Variables", "chained conditional", "Binary", "Arguments", "The Bubble Sort", "Fibonacci Numbers"],
+      "paths": ["python-notebook/glossary/glossary.html", "python-notebook/reference/list.html", "python-notebook/notebook.html", "python-notebook/resources/examples/examples.html", "python-notebook/reference/string.html", "python-notebook/resources/examples/compound-interest.html", "python-notebook/resources/built-in-functions-list.html", "python-notebook/reference/loop.html", "python-notebook/resources/python-tutorial.html", "python-notebook/resources/python-standard-library.html", "python-notebook/resources/python-language-reference.html", "python-notebook/reference/exception-handling.html", "python-notebook/glossary/type.html", "python-notebook/glossary/try-except.html", "python-notebook/glossary/sort.html", "python-notebook/glossary/remove.html", "python-notebook/glossary/pop.html", "python-notebook/glossary/lower.html", "python-notebook/glossary/insert.html", "python-notebook/glossary/for.html", "python-notebook/glossary/del.html", "python-notebook/glossary/append.html", "python-notebook/resources/pep-8-style-guide-python.html", "python-notebook/reference/snake-case.html", "python-notebook/reference/camel-case.html", "python-notebook/glossary/while.html", "python-notebook/glossary/upper.html", "python-notebook/glossary/title.html", "python-notebook/glossary/reverse.html", "python-notebook/glossary/len.html", "python-notebook/glossary/int.html", "python-notebook/glossary/dict.html", "python-notebook/resources/python-control-flow.html", "python-notebook/resources/python-howtos.html", "python-notebook/resources/examples/overtime.html", "python-notebook/reference/string-format.html", "python-notebook/reference/string-concatenation.html", "python-notebook/reference/slice.html", "python-notebook/reference/order-of-operations.html", "python-notebook/reference/nested-conditional.html", "python-notebook/reference/methods.html", "python-notebook/reference/function-vs-method.html", "python-notebook/reference/for-and-in.html", "python-notebook/reference/error-code.html", "python-notebook/reference/dictionary.html", "python-notebook/reference/debugging.html", "python-notebook/reference/debugging-under-idle.html", "python-notebook/reference/custom-functions.html", "python-notebook/reference/conditional-execution.html", "python-notebook/reference/coding-floats.html", "python-notebook/reference/bitwise-operators.html", "python-notebook/glossary/values.html", "python-notebook/glossary/update.html", "python-notebook/glossary/type_map.html", "python-notebook/glossary/strip.html", "python-notebook/glossary/startswith.html", "python-notebook/glossary/square-brackets.html", "python-notebook/glossary/split.html", "python-notebook/glossary/sep.html", "python-notebook/glossary/return.html", "python-notebook/glossary/replace.html", "python-notebook/glossary/removeprefix.html", "python-notebook/glossary/range.html", "python-notebook/glossary/none.html", "python-notebook/glossary/max.html", "python-notebook/glossary/match.html", "python-notebook/glossary/map.html", "python-notebook/glossary/main.html", "python-notebook/glossary/lambda.html", "python-notebook/glossary/isinstance.html", "python-notebook/glossary/isdigit.html", "python-notebook/glossary/input.html", "python-notebook/glossary/index.html", "python-notebook/glossary/guess_type.html", "python-notebook/glossary/get.html", "python-notebook/glossary/find.html", "python-notebook/glossary/endswith.html", "python-notebook/glossary/end.html", "python-notebook/glossary/depend.html", "python-notebook/glossary/def.html", "python-notebook/glossary/count.html", "python-notebook/glossary/copy.html", "python-notebook/glossary/convert.html", "python-notebook/glossary/continue.html", "python-notebook/glossary/clear.html", "python-notebook/glossary/case.html", "python-notebook/glossary/built-in-tuple.html", "python-notebook/glossary/built-in-list.html", "python-notebook/glossary/break.html", "python-notebook/glossary/branch.html", "python-notebook/glossary/backslash.html", "python-notebook/glossary/abs.html", "python-notebook/resources/string-methods.html", "python-notebook/resources/turtle.html", "python-notebook/resources/python-resources-list.html", "python-notebook/resources/media-type.html", "python-notebook/resources/examples/math-examples.html", "python-notebook/resources/examples/histogram.html", "python-notebook/resources/examples/prime-number.html", "python-notebook/resources/examples/sort-strings.html", "python-notebook/resources/examples/reverse-strings.html", "python-notebook/resources/examples/day-of-year.html", "python-notebook/reference/virtual-environment-setup.html", "python-notebook/reference/type-conversion.html", "python-notebook/reference/tuple.html", "python-notebook/reference/suffix.html", "python-notebook/reference/short-circuit.html", "python-notebook/reference/sequence-types.html", "python-notebook/reference/scope-of-functions.html", "python-notebook/reference/scalar.html", "python-notebook/reference/reserved-words.html", "python-notebook/reference/replacing-list-elements.html", "python-notebook/reference/reference.html", "python-notebook/reference/recursion.html", "python-notebook/reference/parameters.html", "python-notebook/reference/operators.html", "python-notebook/reference/numbers.html", "python-notebook/reference/mutability.html", "python-notebook/reference/multiple-assignment.html", "python-notebook/reference/mimetype.html", "python-notebook/reference/logical-operator.html", "python-notebook/reference/logical-expressions.html", "python-notebook/reference/keyword.html", "python-notebook/reference/index-operator.html", "python-notebook/reference/http_2-flow-control.html", "python-notebook/reference/guardian-pattern.html", "python-notebook/reference/functions.html", "python-notebook/reference/factorials.html", "python-notebook/reference/constants.html", "python-notebook/reference/conditional-statement.html", "python-notebook/reference/compound-statement.html", "python-notebook/reference/collection-variables.html", "python-notebook/reference/chained-conditional.html", "python-notebook/reference/binary.html", "python-notebook/reference/arguments.html", "python-notebook/reference/algorithms/the-bubble-sort.html", "python-notebook/reference/algorithms/fibonacci-numbers.html"],
+      "linkSources": [21, 20, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 16, 15, 28, 14, 27, 13, 13, 12, 12, 26, 24, 24, 47, 45, 11, 1, 1, 1, 1, 1, 1, 1, 1, 7, 7, 7, 7, 40, 39, 38, 23, 4, 4, 4, 6, 6, 6, 6, 10, 10, 9, 5, 5, 5, 3, 3, 3, 3, 2, 2, 2, 2],
+      "linkTargets": [1, 1, 44, 91, 21, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 20, 78, 31, 77, 76, 75, 19, 74, 0, 73, 72, 71, 18, 30, 70, 69, 68, 29, 17, 67, 66, 65, 64, 63, 16, 62, 15, 61, 60, 59, 28, 58, 14, 57, 56, 55, 54, 27, 13, 53, 12, 52, 26, 51, 25, 1, 1, 1, 1, 1, 17, 43, 11, 2, 49, 17, 23, 22, 2, 46, 11, 21, 18, 20, 16, 15, 14, 19, 37, 19, 42, 2, 25, 41, 48, 2, 22, 36, 4, 35, 9, 8, 10, 33, 8, 9, 8, 2, 30, 4, 5, 3, 34, 50, 2, 32, 1, 29]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Python Notebook</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="python-notebook"><span class="tree-item-title">Python Notebook</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/glossary"><span class="tree-item-title">Glossary</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/abs.html"><span class="tree-item-title">abs</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/append.html"><span class="tree-item-title">append</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/backslash.html"><span class="tree-item-title">Backslash</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/branch.html"><span class="tree-item-title">Branch</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/break.html"><span class="tree-item-title">break</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/built-in-list.html"><span class="tree-item-title">built-in list</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/built-in-tuple.html"><span class="tree-item-title">built-in tuple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/case.html"><span class="tree-item-title">case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/clear.html"><span class="tree-item-title">clear</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/continue.html"><span class="tree-item-title">continue</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/convert.html"><span class="tree-item-title">convert</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/copy.html"><span class="tree-item-title">copy</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/count.html"><span class="tree-item-title">count</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/def.html"><span class="tree-item-title">def</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/del.html"><span class="tree-item-title">del</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/depend.html"><span class="tree-item-title">depend</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/dict.html"><span class="tree-item-title">dict</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/end.html"><span class="tree-item-title">end</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/endswith.html"><span class="tree-item-title">endswith</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/find.html"><span class="tree-item-title">find</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/for.html"><span class="tree-item-title">for</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/get.html"><span class="tree-item-title">get</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/glossary.html"><span class="tree-item-title">Glossary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/guess_type.html"><span class="tree-item-title">guess_type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/index.html"><span class="tree-item-title">index</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/input.html"><span class="tree-item-title">input</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/insert.html"><span class="tree-item-title">insert</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/int.html"><span class="tree-item-title">int</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/isdigit.html"><span class="tree-item-title">isdigit</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/isinstance.html"><span class="tree-item-title">isinstance</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/lambda.html"><span class="tree-item-title">lambda</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/len.html"><span class="tree-item-title">len</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/lower.html"><span class="tree-item-title">lower</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/main.html"><span class="tree-item-title">main</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/map.html"><span class="tree-item-title">map</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/match.html"><span class="tree-item-title">match</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/max.html"><span class="tree-item-title">max</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/none.html"><span class="tree-item-title">none</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/pop.html"><span class="tree-item-title">pop</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/range.html"><span class="tree-item-title">range</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/remove.html"><span class="tree-item-title">remove</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/removeprefix.html"><span class="tree-item-title">removeprefix</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/replace.html"><span class="tree-item-title">replace</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/return.html"><span class="tree-item-title">return</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/reverse.html"><span class="tree-item-title">reverse</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/sep.html"><span class="tree-item-title">sep</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/sort.html"><span class="tree-item-title">sort</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/split.html"><span class="tree-item-title">split</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/square-brackets.html"><span class="tree-item-title">Square Brackets</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/startswith.html"><span class="tree-item-title">startswith</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/strip.html"><span class="tree-item-title">strip</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/title.html"><span class="tree-item-title">title</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/try-except.html"><span class="tree-item-title">try except</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/type.html"><span class="tree-item-title">type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/type_map.html"><span class="tree-item-title">type_map</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/update.html"><span class="tree-item-title">update</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/upper.html"><span class="tree-item-title">upper</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/values.html"><span class="tree-item-title">values</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/while.html"><span class="tree-item-title">while</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/reference"><span class="tree-item-title">Reference</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="python-notebook/reference/algorithms"><span class="tree-item-title">Algorithms</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/algorithms/fibonacci-numbers.html"><span class="tree-item-title">Fibonacci Numbers</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/algorithms/the-bubble-sort.html"><span class="tree-item-title">The Bubble Sort</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/arguments.html"><span class="tree-item-title">Arguments</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/binary.html"><span class="tree-item-title">Binary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/bitwise-operators.html"><span class="tree-item-title">Bitwise Operators</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/camel-case.html"><span class="tree-item-title">Camel Case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/chained-conditional.html"><span class="tree-item-title">chained conditional</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/coding-floats.html"><span class="tree-item-title">Coding Floats</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/collection-variables.html"><span class="tree-item-title">Collection Variables</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/compound-statement.html"><span class="tree-item-title">Compound Statement</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/conditional-execution.html"><span class="tree-item-title">Conditional Execution</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/conditional-statement.html"><span class="tree-item-title">Conditional Statement</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/constants.html"><span class="tree-item-title">Constants</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/custom-functions.html"><span class="tree-item-title">Custom Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/debugging.html"><span class="tree-item-title">Debugging</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/debugging-under-idle.html"><span class="tree-item-title">Debugging under IDLE</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/dictionary.html"><span class="tree-item-title">Dictionary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/error-code.html"><span class="tree-item-title">Error Code</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/exception-handling.html"><span class="tree-item-title">Exception Handling</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/factorials.html"><span class="tree-item-title">Factorials</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/for-and-in.html"><span class="tree-item-title">FOR and IN</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/function-vs-method.html"><span class="tree-item-title">Function vs Method</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/functions.html"><span class="tree-item-title">Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/guardian-pattern.html"><span class="tree-item-title">Guardian Pattern</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/http_2-flow-control.html"><span class="tree-item-title">HTTP_2 Flow Control</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/index-operator.html"><span class="tree-item-title">Index Operator</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/keyword.html"><span class="tree-item-title">Keyword</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/list.html"><span class="tree-item-title">List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/logical-expressions.html"><span class="tree-item-title">Logical Expressions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/logical-operator.html"><span class="tree-item-title">Logical Operator</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/loop.html"><span class="tree-item-title">Loop</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/methods.html"><span class="tree-item-title">Methods</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/mimetype.html"><span class="tree-item-title">Mimetype</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/multiple-assignment.html"><span class="tree-item-title">Multiple Assignment</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/mutability.html"><span class="tree-item-title">Mutability</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/nested-conditional.html"><span class="tree-item-title">Nested Conditional</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/numbers.html"><span class="tree-item-title">Numbers</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/operators.html"><span class="tree-item-title">Operators</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/order-of-operations.html"><span class="tree-item-title">Order of Operations</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/parameters.html"><span class="tree-item-title">Parameters</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/recursion.html"><span class="tree-item-title">Recursion</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/reference.html"><span class="tree-item-title">Reference</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/replacing-list-elements.html"><span class="tree-item-title">Replacing List Elements</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/reserved-words.html"><span class="tree-item-title">Reserved Words</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/scalar.html"><span class="tree-item-title">Scalar</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/scope-of-functions.html"><span class="tree-item-title">Scope of Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/sequence-types.html"><span class="tree-item-title">Sequence Types</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/short-circuit.html"><span class="tree-item-title">Short Circuit</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/slice.html"><span class="tree-item-title">Slice</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/snake-case.html"><span class="tree-item-title">Snake Case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string.html"><span class="tree-item-title">String</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string-concatenation.html"><span class="tree-item-title">String Concatenation</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string-format.html"><span class="tree-item-title">String Format</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/suffix.html"><span class="tree-item-title">Suffix</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/tuple.html"><span class="tree-item-title">Tuple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/type-conversion.html"><span class="tree-item-title">Type Conversion</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/virtual-environment-setup.html"><span class="tree-item-title">Virtual Environment Setup</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/resources"><span class="tree-item-title">Resources</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="python-notebook/resources/examples"><span class="tree-item-title">Examples</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/compound-interest.html"><span class="tree-item-title">Compound Interest</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/day-of-year.html"><span class="tree-item-title">Day of Year</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/examples.html"><span class="tree-item-title">Examples</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/histogram.html"><span class="tree-item-title">Histogram</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/math-examples.html"><span class="tree-item-title">Math Examples</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/overtime.html"><span class="tree-item-title">Overtime</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/prime-number.html"><span class="tree-item-title">Prime Number</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/reverse-strings.html"><span class="tree-item-title">Reverse Strings</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/sort-strings.html"><span class="tree-item-title">Sort Strings</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/built-in-functions-list.html"><span class="tree-item-title">Built-in Functions List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/media-type.html"><span class="tree-item-title">Media Type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/pep-8-style-guide-python.html"><span class="tree-item-title">PEP 8 - Style Guide Python</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-control-flow.html"><span class="tree-item-title">Python Control Flow</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-howtos.html"><span class="tree-item-title">Python HOWTOs</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-language-reference.html"><span class="tree-item-title">Python Language Reference</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-resources-list.html"><span class="tree-item-title">Python Resources List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-standard-library.html"><span class="tree-item-title">Python Standard Library</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-tutorial.html"><span class="tree-item-title">Python Tutorial</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/string-methods.html"><span class="tree-item-title">String Methods</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/turtle.html"><span class="tree-item-title">Turtle</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/notebook.html"><span class="tree-item-title">Notebook</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <pre class="frontmatter language-yaml" tabindex="0" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">subject</span><span class="token punctuation">:</span> python
+<span class="token key atrule">category</span><span class="token punctuation">:</span> glossary
+<span class="token key atrule">type</span><span class="token punctuation">:</span> 
+<span class="token key atrule">tags</span><span class="token punctuation">:</span> 
+<span class="token key atrule">date</span><span class="token punctuation">:</span> 16<span class="token punctuation">-</span>03<span class="token punctuation">-</span>2023 19<span class="token punctuation">:</span><span class="token number">47</span></code><button class="copy-code-button">Copy</button></pre>
+            <div class="frontmatter-container">
+              <div class="frontmatter-container-header">
+                <div class="frontmatter-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Metadata
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">subject</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">python</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">category</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">glossary</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">date</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">16-03-2023 19:47</span></div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div>
+            <h1 data-heading="Conditional Execution" id="Conditional_Execution">Conditional Execution</h1>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p><a href="#conditional" class="tag" target="_blank" rel="noopener">#conditional</a> </p>
+          </div>
+          <div>
+            <p><a data-href="Lecture 1 Notes" href="Lecture 1 Notes" class="internal-link is-unresolved" target="_self" rel="noopener">Lecture 1 Notes</a></p>
+          </div>
+          <div>
+            <h2 data-heading="Boolean Expression" id="Boolean_Expression" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Boolean Expression
+            </h2>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p>Boolean only knows two values: true or false, as the programming concept.</p>
+          </div>
+          <div>
+            <pre><code>Example:: true
+Example:: false
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <h2 data-heading="Logical Operators" id="Logical_Operators" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Logical Operators
+            </h2>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230316200019.png" src="Pasted image 20230316200019.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230316200019.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <h2 data-heading="Alternative Execution" id="Alternative_Execution" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Alternative Execution
+            </h2>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p>Alternative execution in Python refers to the ability to execute different sections of code depending on whether a certain condition is true or false. This is achieved using conditional statements such as <code>if</code>, <code>else</code>, and <code>elif</code>.</p>
+          </div>
+          <div>
+            <p>The basic structure of an <code>if</code> statement is as follows:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> condition<span class="token punctuation">:</span>
+    <span class="token comment"># code to execute if the condition is true</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>Here, the <code>condition</code> is a boolean expression that evaluates to either <code>True</code> or <code>False</code>. If the condition is true, the code within the indented block will be executed.</p>
+          </div>
+          <div>
+            <p>If you want to execute a different block of code when the condition is false, you can use the <code>else</code> statement:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> condition<span class="token punctuation">:</span>
+    <span class="token comment"># code to execute if the condition is true</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token comment"># code to execute if the condition is false</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>If you have multiple conditions that you want to test, you can use the <code>elif</code> statement:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> condition1<span class="token punctuation">:</span>
+    <span class="token comment"># code to execute if condition1 is true</span>
+<span class="token keyword">elif</span> condition2<span class="token punctuation">:</span>
+    <span class="token comment"># code to execute if condition2 is true</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token comment"># code to execute if both condition1 and condition2 are false</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>In this example, if <code>condition1</code> is true, the code within the first indented block will be executed. If <code>condition1</code> is false but <code>condition2</code> is true, the code within the second indented block will be executed. If both conditions are false, the code within the <code>else</code> block will be executed.</p>
+          </div>
+          <div>
+            <p>Alternative execution is a fundamental concept in programming and is essential for making decisions in your code based on certain conditions. With practice, you'll get more comfortable using conditional statements and will be able to write more complex programs.</p>
+          </div>
+          <div>
+            <h2 data-heading="Chained Conditionals" id="Chained_Conditionals" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Chained Conditionals
+            </h2>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p>Chained conditions in Python refer to the ability to test multiple conditions using logical operators like <code>and</code> and <code>or</code> in a single <code>if</code> statement. This allows you to check whether multiple conditions are true or false at once, and execute code accordingly.</p>
+          </div>
+          <div>
+            <p>For example, suppose you want to check whether a number is between 1 and 10, inclusive. You can do this using chained conditions as follows:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> <span class="token number">1</span> <span class="token operator">&lt;=</span> number <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">:</span>
+    <span class="token comment"># code to execute if the condition is true</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>Here, the chained condition <code>1 &lt;= number &lt;= 10</code> checks whether the <code>number</code> variable is greater than or equal to 1 and less than or equal to 10. If the condition is true, the code within the indented block will be executed.</p>
+          </div>
+          <div>
+            <p>You can also use logical operators like <code>and</code> and <code>or</code> to combine multiple conditions. For example:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> age <span class="token operator">&gt;=</span> <span class="token number">18</span> <span class="token keyword">and</span> country <span class="token operator">==</span> <span class="token string">"USA"</span><span class="token punctuation">:</span>
+    <span class="token comment"># code to execute if the condition is true</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>In this example, the chained condition <code>age &gt;= 18 and country == "USA"</code> checks whether the <code>age</code> variable is greater than or equal to 18 and whether the <code>country</code> variable is equal to "USA". If both conditions are true, the code within the indented block will be executed.</p>
+          </div>
+          <div>
+            <p>Alternatively, you can use the <code>or</code> operator to create a condition where only one of the two conditions needs to be true:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> country <span class="token operator">==</span> <span class="token string">"USA"</span> <span class="token keyword">or</span> country <span class="token operator">==</span> <span class="token string">"Canada"</span><span class="token punctuation">:</span>
+    <span class="token comment"># code to execute if the condition is true</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>In this example, the chained condition <code>country == "USA" or country == "Canada"</code> checks whether the <code>country</code> variable is either "USA" or "Canada". If either condition is true, the code within the indented block will be executed.</p>
+          </div>
+          <div>
+            <p>Chained conditions allow you to write more concise and readable code, especially when you need to test multiple conditions at once.</p>
+          </div>
+          <div>
+            <h2 data-heading="Nested Conditionals" id="Nested_Conditionals" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Nested Conditionals
+            </h2>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p>Nested conditionals in Python refer to the ability to include one or more conditional statements within another conditional statement. This allows you to test for more complex conditions and execute code based on the results of these tests.</p>
+          </div>
+          <div>
+            <p>Here are two important points:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>this use of the&nbsp;<code>if</code>&nbsp;statement is known as&nbsp;<strong>nesting</strong>; remember that every&nbsp;<code>else</code>&nbsp;refers to the&nbsp;<code>if</code>&nbsp;which lies&nbsp;<strong>at the same indentation level</strong>; you need to know this to determine how the&nbsp;_if_s and&nbsp;_else_s pair up;
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>consider how the&nbsp;<strong>indentation improves readability</strong>, and makes the code easier to understand and trace.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>For example, suppose you want to check whether a number is positive, negative, or zero. You can do this using nested conditionals as follows:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> number <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The number is positive."</span><span class="token punctuation">)</span>
+<span class="token keyword">elif</span> number <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The number is negative."</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The number is zero."</span><span class="token punctuation">)</span>
+
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>In this example, the first conditional statement checks whether the <code>number</code> variable is greater than 0. If this is true, the code within the indented block is executed and the message "The number is positive." is printed.</p>
+          </div>
+          <div>
+            <p>If the first condition is false, the <code>elif</code> statement checks whether the <code>number</code> variable is less than 0. If this is true, the code within the second indented block is executed and the message "The number is negative." is printed.</p>
+          </div>
+          <div>
+            <p>If both the first and second conditions are false, the <code>else</code> statement is executed, and the message "The number is zero." is printed.</p>
+          </div>
+          <div>
+            <p>You can also include more complex conditions within nested conditionals, such as multiple conditions combined with logical operators:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> age <span class="token operator">&gt;=</span> <span class="token number">18</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> country <span class="token operator">==</span> <span class="token string">"USA"</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"You are eligible to vote."</span><span class="token punctuation">)</span>
+    <span class="token keyword">elif</span> country <span class="token operator">==</span> <span class="token string">"Canada"</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"You are eligible to vote."</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"You are not eligible to vote."</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"You are not old enough to vote."</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>In this example, the first conditional statement checks whether the <code>age</code> variable is greater than or equal to 18. If this is true, the nested conditional statement checks whether the <code>country</code> variable is equal to "USA" or "Canada". If either condition is true, the code within the first indented block is executed and the message "You are eligible to vote." is printed.</p>
+          </div>
+          <div>
+            <p>If both conditions are false, the code within the second <code>else</code> block is executed, and the message "You are not eligible to vote." is printed.</p>
+          </div>
+          <div>
+            <p>If the first condition is false, the code within the second <code>else</code> block is executed, and the message "You are not old enough to vote." is printed.</p>
+          </div>
+          <div>
+            <p>Nested conditionals allow you to test for more complex conditions and execute code based on the results of these tests. However, be careful not to make your code too complex or difficult to read by nesting too many conditionals within one another.</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> the_weather_is_good<span class="token punctuation">:</span> 
+	<span class="token keyword">if</span> nice_restaurant_is_found<span class="token punctuation">:</span>
+		have_lunch<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+	<span class="token keyword">else</span><span class="token punctuation">:</span> 
+		eat_a_sandwich<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token keyword">else</span><span class="token punctuation">:</span> 
+	<span class="token keyword">if</span> tickets_are_available<span class="token punctuation">:</span>
+		go_to_the_theater<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+    <span class="token keyword">else</span><span class="token punctuation">:</span> 
+    	go_shopping<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>The way to assemble subsequent&nbsp;<em>if-elif-else</em>&nbsp;statements is sometimes called a&nbsp;<strong>cascade</strong>.</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> the_weather_is_good<span class="token punctuation">:</span>
+    go_for_a_walk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+<span class="token keyword">elif</span> tickets_are_available<span class="token punctuation">:</span>
+    go_to_the_theater<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+<span class="token keyword">elif</span> table_is_available<span class="token punctuation">:</span>
+    go_for_lunch<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    play_chess_at_home<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>Some additional attention has to be paid in this case:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>you&nbsp;<strong>mustn't use&nbsp;<code>else</code>&nbsp;without a preceding&nbsp;<code>if</code></strong>;
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><code>else</code>&nbsp;is always the&nbsp;<strong>last branch of the cascade</strong>, regardless of whether you've used&nbsp;<code>elif</code>&nbsp;or not;
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><code>else</code>&nbsp;is an&nbsp;<strong>optional</strong>&nbsp;part of the cascade, and may be omitted;
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>if there is an&nbsp;else branch in the cascade, only one of all the branches is executed;
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>if there is no&nbsp;else branch, it's possible that none of the available branches is executed.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Short Circuit Evaluation" id="Short_Circuit_Evaluation" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Short Circuit Evaluation
+            </h2>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p>When Python detects that there is nothing to be gained by evaluating the rest of a logical expression, it stops it's evaluation and does not do the computations in the rest of the logical expression. When the evaluation of a logical expression stops because the overall value is already known, it is called <em>short-circuiting</em> the evaluation.</p>
+          </div>
+          <div>
+            <p>While this may seem like a fine point the short circuit behaviour is next to a clever technique called the <em>guardian pattern</em>.</p>
+          </div>
+          <div>
+            <p>When evaluating a logical expression with the "and" operator, if the first operand evaluates to False, then the entire expression is False, and the second operand is not evaluated. Similarly, when evaluating a logical expression with the "or" operator, if the first operand evaluates to True, then the entire expression is True, and the second operand is not evaluated.</p>
+          </div>
+          <div>
+            <p>Here is an example of short circuit evaluation using the "and" operator:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded">x <span class="token operator">=</span> <span class="token number">5</span>
+y <span class="token operator">=</span> <span class="token number">10</span>
+<span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">and</span> y<span class="token operator">/</span>x <span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"y is greater than twice x"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"y is not greater than twice x"</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>In this example, the second operand of the "and" operator (<code>y/x &gt; 2</code>) is not evaluated if <code>x &gt; 0</code> is False, because the entire expression would be False regardless of the value of the second operand. This is because in an "and" expression, if any operand is False, the entire expression must be False.</p>
+          </div>
+          <div>
+            <p>Similarly, here is an example of short circuit evaluation using the "or" operator:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded">x <span class="token operator">=</span> <span class="token boolean">None</span>
+y <span class="token operator">=</span> <span class="token number">10</span>
+<span class="token keyword">if</span> x <span class="token keyword">is</span> <span class="token boolean">None</span> <span class="token keyword">or</span> y<span class="token operator">/</span>x <span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"y is either greater than twice x or x is None"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"y is not greater than twice x and x is not None"</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>In this example, the second operand of the "or" operator (<code>y/x &gt; 2</code>) is not evaluated if <code>x is None</code> is True, because the entire expression would be True regardless of the value of the second operand. This is because in an "or" expression, if any operand is True, the entire expression must be True.</p>
+          </div>
+          <div>
+            <p>Overall, short circuit evaluation can be a useful tool for improving the efficiency and readability of your code.</p>
+          </div>
+          <div>
+            <h2 data-heading="More on Conditional Execution" id="More_on_Conditional_Execution" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>More on Conditional Execution
+            </h2>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p>The first form of a conditional statement, which you can see below is written very informally but figuratively:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> true_or_not<span class="token punctuation">:</span>
+    do_this_if_true
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>This conditional statement consists of the following, strictly necessary, elements in this and this order only:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>the&nbsp;<code>if</code>&nbsp;keyword;
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>one or more white spaces;
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>an expression (a question or an answer) whose value will be interpreted solely in terms of&nbsp;<code>True</code>&nbsp;(when its value is non-zero) and&nbsp;<code>False</code>&nbsp;(when it is equal to zero);
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>a&nbsp;<span style="color:#fa8231"><strong>colon</strong></span>&nbsp;followed by a newline;
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>an&nbsp;<span style="color:#fa8231"><strong>indented</strong></span>&nbsp;instruction or set of instructions (at least one instruction is absolutely required); the<span style="color:#fa8231">&nbsp;<strong>indentation</strong></span>&nbsp;may be achieved in two ways - by inserting a particular number of spaces (the recommendation is to use&nbsp;<span style="color:#fa8231"><strong>four spaces of indentation</strong></span>), or by using the&nbsp;<em>tab</em>&nbsp;character; note: if there is more than one instruction in the indented part, the indentation should be the same in all lines; even though it may look the same if you use tabs mixed with spaces, it's important to make all indentations<span style="color:#fa8231">&nbsp;<strong>exactly the same</strong>&nbsp;</span>- Python 3&nbsp;<span style="color:#fa8231"><strong>does not allow mixing spaces and tabs</strong></span>&nbsp;for indentation.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>How does that statement work?</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>If the <code>true_or_not</code> expression <span style="color:#fa8231"><strong>represents the truth</strong></span> (i.e., its value is not equal to zero), <span style="color:#fa8231"><strong>the indented statement(s) will be executed</strong></span>;
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>if the true_or_not expression <strong>does not represent the truth</strong> (i.e., its value is equal to zero), <span style="color:#fa8231"><strong>the indented statement(s) will be omitted</strong></span> (ignored), and the next executed instruction will be the one after the original indentation level.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>In real life, we often express a desire:</p>
+          </div>
+          <div>
+            <p><em>if the weather is good, we'll go for a walk</em><br>
+              <em>then, we'll have lunch</em>
+            </p>
+          </div>
+          <div>
+            <p>As you can see, having lunch is <span style="color:#fa8231"><strong>not a conditional activity</strong></span> and doesn't depend on the weather.</p>
+          </div>
+          <div>
+            <p>Knowing what conditions influence our behavior, and assuming that we have the parameterless functions <code>go_for_a_walk()</code> and <code>have_lunch()</code>, we can write the following snippet:</p>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> the_weather_is_good<span class="token punctuation">:</span> 
+	go_for_a_walk<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+
+have_lunch<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <h3 data-heading="Key takeaways" id="Key_takeaways" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Key takeaways
+            </h3>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">The <strong>comparison</strong> (otherwise known as <em>relational</em>) operators are used to compare values. The table below illustrates how the comparison operators work, assuming that <code>x = 0</code>, <code>y = 1</code>, and <code>z = 0</code>:</li>
+            </ol>
+          </div>
+          <div style="overflow-x: auto;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>=</code> <code>=</code></td>
+                  <td>returns <code>True</code> if operands' values are equal, and <code>False</code> otherwise</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><code>!=</code></td>
+                  <td>returns <code>True</code> if operands' values are not equal, and <code>False</code> otherwise</td>
+                  <td><code> x != y # True x != z # False </code></td>
+                </tr>
+                <tr>
+                  <td><code>&gt;</code></td>
+                  <td><code>True</code> if the left operand's value is greater than the right operand's value, and <code>False</code> otherwise</td>
+                  <td><code> x &gt; y # False y &gt; z # True </code></td>
+                </tr>
+                <tr>
+                  <td><code>&lt;</code></td>
+                  <td><code>True</code> if the left operand's value is less than the right operand's value, and <code>False</code> otherwise</td>
+                  <td><code> x &lt; y # True y &lt; z # False </code></td>
+                </tr>
+                <tr>
+                  <td><code>≥</code></td>
+                  <td><code>True</code> if the left operand's value is greater than or equal to the right operand's value, and <code>False</code> otherwise</td>
+                  <td><code> x &gt;= y # False x &gt;= z # True y &gt;= z # True </code></td>
+                </tr>
+                <tr>
+                  <td><code>≤</code></td>
+                  <td><code>True</code> if the left operand's value is less than or equal to the right operand's value, and <code>False</code> otherwise</td>
+                  <td><code> x &lt;= y # True x &lt;= z # True y &lt;= z # False </code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <ol start="2">
+              <li data-line="0">When you want to execute some code only if a certain condition is met, you can use a <strong>conditional statement</strong>:</li>
+            </ol>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>a single <code>if</code> statement, e.g.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded">x <span class="token operator">=</span> <span class="token number">10</span>  
+<span class="token keyword">if</span> x <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">:</span> <span class="token comment"># condition  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x is equal to 10"</span><span class="token punctuation">)</span> <span class="token comment"># Executed if the condition is True. </span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>a series of <code>if</code> statements, e.g .:
+              </li>
+            </ul>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded">x <span class="token operator">=</span> <span class="token number">10</span>  
+<span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">5</span><span class="token punctuation">:</span> <span class="token comment"># condition one  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x is greater than 5"</span><span class="token punctuation">)</span> <span class="token comment"># Executed if condition one is True.  </span>
+<span class="token keyword">if</span> x <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">:</span> <span class="token comment"># condition two  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x is less than 10"</span><span class="token punctuation">)</span> <span class="token comment"># Executed if condition two is True.  </span>
+<span class="token keyword">if</span> x <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">:</span> <span class="token comment"># condition three  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x is equal to 10"</span><span class="token punctuation">)</span> <span class="token comment"># Executed if condition three is True.   </span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>Each <code>if</code> statement is tested separately.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>an <code>if-else</code> statement, e.g.:
+              </li>
+            </ul>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded">x <span class="token operator">=</span> <span class="token number">10</span>  
+<span class="token keyword">if</span> x <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">:</span> <span class="token comment"># Condition  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x is less than 10"</span><span class="token punctuation">)</span> <span class="token comment"># Executed if the condition is True.  </span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>  
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x is greater than or equal to 10"</span><span class="token punctuation">)</span> <span class="token comment"># Executed if the condition is False.   </span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>a series of <code>if</code> statements followed by an <code>else</code>, e.g.:
+              </li>
+            </ul>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded">x <span class="token operator">=</span> <span class="token number">10</span>  <span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">5</span><span class="token punctuation">:</span> <span class="token comment"># True  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &gt; 5"</span><span class="token punctuation">)</span>  
+<span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">8</span><span class="token punctuation">:</span> <span class="token comment"># True  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &gt; 8"</span><span class="token punctuation">)</span>  
+<span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">10</span><span class="token punctuation">:</span> <span class="token comment"># False  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &gt; 10"</span><span class="token punctuation">)</span>  
+<span class="token keyword">else</span><span class="token punctuation">:</span>  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"else will be executed"</span><span class="token punctuation">)</span>   
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>Each <code>if</code> is tested separately. The body of <code>else</code> is executed if the last <code>if</code> is <code>False</code>.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>The <code>if-elif-else</code> statement, e.g.:
+              </li>
+            </ul>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded">x <span class="token operator">=</span> <span class="token number">10</span>  
+<span class="token keyword">if</span> x <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">:</span> <span class="token comment"># True  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x == 10"</span><span class="token punctuation">)</span>  
+
+<span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">15</span><span class="token punctuation">:</span> <span class="token comment"># False  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &gt; 15"</span><span class="token punctuation">)</span>  
+	
+<span class="token keyword">elif</span> x <span class="token operator">&gt;</span> <span class="token number">10</span><span class="token punctuation">:</span> <span class="token comment"># False  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &gt; 10"</span><span class="token punctuation">)</span>  
+
+<span class="token keyword">elif</span> x <span class="token operator">&gt;</span> <span class="token number">5</span><span class="token punctuation">:</span> <span class="token comment"># True  </span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"x &gt; 5"</span><span class="token punctuation">)</span>  
+<span class="token keyword">else</span><span class="token punctuation">:</span>  
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"else will not be executed"</span><span class="token punctuation">)</span>   
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>If the condition for <code>if</code> is <code>False</code>, the program checks the conditions of the subsequent <code>elif</code> blocks – the first <code>elif</code> block that is <code>True</code> is executed. If all the conditions are <code>False</code>, the <code>else</code> block will be executed.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Nested conditional statements, e.g.:
+              </li>
+            </ul>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded">x <span class="token operator">=</span> <span class="token number">10</span>  
+<span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">5</span><span class="token punctuation">:</span> <span class="token comment"># True  </span>
+	<span class="token keyword">if</span> x <span class="token operator">==</span> <span class="token number">6</span><span class="token punctuation">:</span> <span class="token comment"># False  </span>
+		<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"nested: x == 6"</span><span class="token punctuation">)</span>  
+	<span class="token keyword">elif</span> x <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">:</span> <span class="token comment"># True  </span>
+		<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"nested: x == 10"</span><span class="token punctuation">)</span>  
+	<span class="token keyword">else</span><span class="token punctuation">:</span>  
+		<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"nested: else"</span><span class="token punctuation">)</span>  
+<span class="token keyword">else</span><span class="token punctuation">:</span>  
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"else"</span><span class="token punctuation">)</span>   
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <h2 data-heading="More Examples" id="More_Examples" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>More Examples
+            </h2>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token comment"># Read three numbers</span>
+number1 <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the first number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+number2 <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the second number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+number3 <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the third number: "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># We temporarily assume that the first number</span>
+<span class="token comment"># is the largest one.</span>
+<span class="token comment"># We will verify this soon.</span>
+largest_number <span class="token operator">=</span> number1
+
+<span class="token comment"># We check if the second number is larger than current largest_number</span>
+<span class="token comment"># and update largest_number if needed.</span>
+<span class="token keyword">if</span> number2 <span class="token operator">&gt;</span> largest_number<span class="token punctuation">:</span>
+    largest_number <span class="token operator">=</span> number2
+
+<span class="token comment"># We check if the third number is larger than current largest_number</span>
+<span class="token comment"># and update largest_number if needed.</span>
+<span class="token keyword">if</span> number3 <span class="token operator">&gt;</span> largest_number<span class="token punctuation">:</span>
+    largest_number <span class="token operator">=</span> number3
+
+<span class="token comment"># Print the result</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The largest number is:"</span><span class="token punctuation">,</span> largest_number<span class="token punctuation">)</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Conditional_Execution"><span class="tree-item-title">Conditional Execution</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Boolean_Expression"><span class="tree-item-title">Boolean Expression</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Logical_Operators"><span class="tree-item-title">Logical Operators</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Alternative_Execution"><span class="tree-item-title">Alternative Execution</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Chained_Conditionals"><span class="tree-item-title">Chained Conditionals</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Nested_Conditionals"><span class="tree-item-title">Nested Conditionals</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Short_Circuit_Evaluation"><span class="tree-item-title">Short Circuit Evaluation</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#More_on_Conditional_Execution"><span class="tree-item-title">More on Conditional Execution</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Key_takeaways"><span class="tree-item-title">Key takeaways</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#More_Examples"><span class="tree-item-title">More Examples</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

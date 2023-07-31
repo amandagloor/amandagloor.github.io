@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>HTTP_2 Flow Control</title>
+  <base href="../../">
+  <meta id="root-path" root-path="../../">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style> </style>
+
+
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 137,
+      "linkCount": 115,
+      "radii": [7, 5.222222222222222, 4.493055555555555, 3.7899305555555554, 3.7899305555555554, 3.6388888888888893, 3.6388888888888893, 3.6388888888888893, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.3263888888888893, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3.1649305555555554, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "labels": ["Glossary", "List", "Notebook", "Examples", "String", "Compound Interest", "Built-in Functions List", "Loop", "Python Tutorial", "Python Standard Library", "Python Language Reference", "Exception Handling", "type", "try except", "sort", "remove", "pop", "lower", "insert", "for", "del", "append", "PEP 8 - Style Guide Python", "Snake Case", "Camel Case", "while", "upper", "title", "reverse", "len", "int", "dict", "Python Control Flow", "Python HOWTOs", "Overtime", "String Format", "String Concatenation", "Slice", "Order of Operations", "Nested Conditional", "Methods", "Function vs Method", "FOR and IN", "Error Code", "Dictionary", "Debugging", "Debugging under IDLE", "Custom Functions", "Conditional Execution", "Coding Floats", "Bitwise Operators", "values", "update", "type_map", "strip", "startswith", "Square Brackets", "split", "sep", "return", "replace", "removeprefix", "range", "none", "max", "match", "map", "main", "lambda", "isinstance", "isdigit", "input", "index", "guess_type", "get", "find", "endswith", "end", "depend", "def", "count", "copy", "convert", "continue", "clear", "case", "built-in tuple", "built-in list", "break", "Branch", "Backslash", "abs", "String Methods", "Turtle", "Python Resources List", "Media Type", "Math Examples", "Histogram", "Prime Number", "Sort Strings", "Reverse Strings", "Day of Year", "Virtual Environment Setup", "Type Conversion", "Tuple", "Suffix", "Short Circuit", "Sequence Types", "Scope of Functions", "Scalar", "Reserved Words", "Replacing List Elements", "Reference", "Recursion", "Parameters", "Operators", "Numbers", "Mutability", "Multiple Assignment", "Mimetype", "Logical Operator", "Logical Expressions", "Keyword", "Index Operator", "HTTP_2 Flow Control", "Guardian Pattern", "Functions", "Factorials", "Constants", "Conditional Statement", "Compound Statement", "Collection Variables", "chained conditional", "Binary", "Arguments", "The Bubble Sort", "Fibonacci Numbers"],
+      "paths": ["python-notebook/glossary/glossary.html", "python-notebook/reference/list.html", "python-notebook/notebook.html", "python-notebook/resources/examples/examples.html", "python-notebook/reference/string.html", "python-notebook/resources/examples/compound-interest.html", "python-notebook/resources/built-in-functions-list.html", "python-notebook/reference/loop.html", "python-notebook/resources/python-tutorial.html", "python-notebook/resources/python-standard-library.html", "python-notebook/resources/python-language-reference.html", "python-notebook/reference/exception-handling.html", "python-notebook/glossary/type.html", "python-notebook/glossary/try-except.html", "python-notebook/glossary/sort.html", "python-notebook/glossary/remove.html", "python-notebook/glossary/pop.html", "python-notebook/glossary/lower.html", "python-notebook/glossary/insert.html", "python-notebook/glossary/for.html", "python-notebook/glossary/del.html", "python-notebook/glossary/append.html", "python-notebook/resources/pep-8-style-guide-python.html", "python-notebook/reference/snake-case.html", "python-notebook/reference/camel-case.html", "python-notebook/glossary/while.html", "python-notebook/glossary/upper.html", "python-notebook/glossary/title.html", "python-notebook/glossary/reverse.html", "python-notebook/glossary/len.html", "python-notebook/glossary/int.html", "python-notebook/glossary/dict.html", "python-notebook/resources/python-control-flow.html", "python-notebook/resources/python-howtos.html", "python-notebook/resources/examples/overtime.html", "python-notebook/reference/string-format.html", "python-notebook/reference/string-concatenation.html", "python-notebook/reference/slice.html", "python-notebook/reference/order-of-operations.html", "python-notebook/reference/nested-conditional.html", "python-notebook/reference/methods.html", "python-notebook/reference/function-vs-method.html", "python-notebook/reference/for-and-in.html", "python-notebook/reference/error-code.html", "python-notebook/reference/dictionary.html", "python-notebook/reference/debugging.html", "python-notebook/reference/debugging-under-idle.html", "python-notebook/reference/custom-functions.html", "python-notebook/reference/conditional-execution.html", "python-notebook/reference/coding-floats.html", "python-notebook/reference/bitwise-operators.html", "python-notebook/glossary/values.html", "python-notebook/glossary/update.html", "python-notebook/glossary/type_map.html", "python-notebook/glossary/strip.html", "python-notebook/glossary/startswith.html", "python-notebook/glossary/square-brackets.html", "python-notebook/glossary/split.html", "python-notebook/glossary/sep.html", "python-notebook/glossary/return.html", "python-notebook/glossary/replace.html", "python-notebook/glossary/removeprefix.html", "python-notebook/glossary/range.html", "python-notebook/glossary/none.html", "python-notebook/glossary/max.html", "python-notebook/glossary/match.html", "python-notebook/glossary/map.html", "python-notebook/glossary/main.html", "python-notebook/glossary/lambda.html", "python-notebook/glossary/isinstance.html", "python-notebook/glossary/isdigit.html", "python-notebook/glossary/input.html", "python-notebook/glossary/index.html", "python-notebook/glossary/guess_type.html", "python-notebook/glossary/get.html", "python-notebook/glossary/find.html", "python-notebook/glossary/endswith.html", "python-notebook/glossary/end.html", "python-notebook/glossary/depend.html", "python-notebook/glossary/def.html", "python-notebook/glossary/count.html", "python-notebook/glossary/copy.html", "python-notebook/glossary/convert.html", "python-notebook/glossary/continue.html", "python-notebook/glossary/clear.html", "python-notebook/glossary/case.html", "python-notebook/glossary/built-in-tuple.html", "python-notebook/glossary/built-in-list.html", "python-notebook/glossary/break.html", "python-notebook/glossary/branch.html", "python-notebook/glossary/backslash.html", "python-notebook/glossary/abs.html", "python-notebook/resources/string-methods.html", "python-notebook/resources/turtle.html", "python-notebook/resources/python-resources-list.html", "python-notebook/resources/media-type.html", "python-notebook/resources/examples/math-examples.html", "python-notebook/resources/examples/histogram.html", "python-notebook/resources/examples/prime-number.html", "python-notebook/resources/examples/sort-strings.html", "python-notebook/resources/examples/reverse-strings.html", "python-notebook/resources/examples/day-of-year.html", "python-notebook/reference/virtual-environment-setup.html", "python-notebook/reference/type-conversion.html", "python-notebook/reference/tuple.html", "python-notebook/reference/suffix.html", "python-notebook/reference/short-circuit.html", "python-notebook/reference/sequence-types.html", "python-notebook/reference/scope-of-functions.html", "python-notebook/reference/scalar.html", "python-notebook/reference/reserved-words.html", "python-notebook/reference/replacing-list-elements.html", "python-notebook/reference/reference.html", "python-notebook/reference/recursion.html", "python-notebook/reference/parameters.html", "python-notebook/reference/operators.html", "python-notebook/reference/numbers.html", "python-notebook/reference/mutability.html", "python-notebook/reference/multiple-assignment.html", "python-notebook/reference/mimetype.html", "python-notebook/reference/logical-operator.html", "python-notebook/reference/logical-expressions.html", "python-notebook/reference/keyword.html", "python-notebook/reference/index-operator.html", "python-notebook/reference/http_2-flow-control.html", "python-notebook/reference/guardian-pattern.html", "python-notebook/reference/functions.html", "python-notebook/reference/factorials.html", "python-notebook/reference/constants.html", "python-notebook/reference/conditional-statement.html", "python-notebook/reference/compound-statement.html", "python-notebook/reference/collection-variables.html", "python-notebook/reference/chained-conditional.html", "python-notebook/reference/binary.html", "python-notebook/reference/arguments.html", "python-notebook/reference/algorithms/the-bubble-sort.html", "python-notebook/reference/algorithms/fibonacci-numbers.html"],
+      "linkSources": [21, 20, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 16, 15, 28, 14, 27, 13, 13, 12, 12, 26, 24, 24, 47, 45, 11, 1, 1, 1, 1, 1, 1, 1, 1, 7, 7, 7, 7, 40, 39, 38, 23, 4, 4, 4, 6, 6, 6, 6, 10, 10, 9, 5, 5, 5, 3, 3, 3, 3, 2, 2, 2, 2],
+      "linkTargets": [1, 1, 44, 91, 21, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 20, 78, 31, 77, 76, 75, 19, 74, 0, 73, 72, 71, 18, 30, 70, 69, 68, 29, 17, 67, 66, 65, 64, 63, 16, 62, 15, 61, 60, 59, 28, 58, 14, 57, 56, 55, 54, 27, 13, 53, 12, 52, 26, 51, 25, 1, 1, 1, 1, 1, 17, 43, 11, 2, 49, 17, 23, 22, 2, 46, 11, 21, 18, 20, 16, 15, 14, 19, 37, 19, 42, 2, 25, 41, 48, 2, 22, 36, 4, 35, 9, 8, 10, 33, 8, 9, 8, 2, 30, 4, 5, 3, 34, 50, 2, 32, 1, 29]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Python Notebook</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="python-notebook"><span class="tree-item-title">Python Notebook</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/glossary"><span class="tree-item-title">Glossary</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/abs.html"><span class="tree-item-title">abs</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/append.html"><span class="tree-item-title">append</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/backslash.html"><span class="tree-item-title">Backslash</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/branch.html"><span class="tree-item-title">Branch</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/break.html"><span class="tree-item-title">break</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/built-in-list.html"><span class="tree-item-title">built-in list</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/built-in-tuple.html"><span class="tree-item-title">built-in tuple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/case.html"><span class="tree-item-title">case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/clear.html"><span class="tree-item-title">clear</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/continue.html"><span class="tree-item-title">continue</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/convert.html"><span class="tree-item-title">convert</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/copy.html"><span class="tree-item-title">copy</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/count.html"><span class="tree-item-title">count</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/def.html"><span class="tree-item-title">def</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/del.html"><span class="tree-item-title">del</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/depend.html"><span class="tree-item-title">depend</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/dict.html"><span class="tree-item-title">dict</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/end.html"><span class="tree-item-title">end</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/endswith.html"><span class="tree-item-title">endswith</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/find.html"><span class="tree-item-title">find</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/for.html"><span class="tree-item-title">for</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/get.html"><span class="tree-item-title">get</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/glossary.html"><span class="tree-item-title">Glossary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/guess_type.html"><span class="tree-item-title">guess_type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/index.html"><span class="tree-item-title">index</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/input.html"><span class="tree-item-title">input</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/insert.html"><span class="tree-item-title">insert</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/int.html"><span class="tree-item-title">int</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/isdigit.html"><span class="tree-item-title">isdigit</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/isinstance.html"><span class="tree-item-title">isinstance</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/lambda.html"><span class="tree-item-title">lambda</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/len.html"><span class="tree-item-title">len</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/lower.html"><span class="tree-item-title">lower</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/main.html"><span class="tree-item-title">main</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/map.html"><span class="tree-item-title">map</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/match.html"><span class="tree-item-title">match</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/max.html"><span class="tree-item-title">max</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/none.html"><span class="tree-item-title">none</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/pop.html"><span class="tree-item-title">pop</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/range.html"><span class="tree-item-title">range</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/remove.html"><span class="tree-item-title">remove</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/removeprefix.html"><span class="tree-item-title">removeprefix</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/replace.html"><span class="tree-item-title">replace</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/return.html"><span class="tree-item-title">return</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/reverse.html"><span class="tree-item-title">reverse</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/sep.html"><span class="tree-item-title">sep</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/sort.html"><span class="tree-item-title">sort</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/split.html"><span class="tree-item-title">split</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/square-brackets.html"><span class="tree-item-title">Square Brackets</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/startswith.html"><span class="tree-item-title">startswith</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/strip.html"><span class="tree-item-title">strip</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/title.html"><span class="tree-item-title">title</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/try-except.html"><span class="tree-item-title">try except</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/type.html"><span class="tree-item-title">type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/type_map.html"><span class="tree-item-title">type_map</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/update.html"><span class="tree-item-title">update</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/upper.html"><span class="tree-item-title">upper</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/values.html"><span class="tree-item-title">values</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/glossary/while.html"><span class="tree-item-title">while</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/reference"><span class="tree-item-title">Reference</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="python-notebook/reference/algorithms"><span class="tree-item-title">Algorithms</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/algorithms/fibonacci-numbers.html"><span class="tree-item-title">Fibonacci Numbers</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/algorithms/the-bubble-sort.html"><span class="tree-item-title">The Bubble Sort</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/arguments.html"><span class="tree-item-title">Arguments</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/binary.html"><span class="tree-item-title">Binary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/bitwise-operators.html"><span class="tree-item-title">Bitwise Operators</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/camel-case.html"><span class="tree-item-title">Camel Case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/chained-conditional.html"><span class="tree-item-title">chained conditional</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/coding-floats.html"><span class="tree-item-title">Coding Floats</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/collection-variables.html"><span class="tree-item-title">Collection Variables</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/compound-statement.html"><span class="tree-item-title">Compound Statement</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/conditional-execution.html"><span class="tree-item-title">Conditional Execution</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/conditional-statement.html"><span class="tree-item-title">Conditional Statement</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/constants.html"><span class="tree-item-title">Constants</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/custom-functions.html"><span class="tree-item-title">Custom Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/debugging.html"><span class="tree-item-title">Debugging</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/debugging-under-idle.html"><span class="tree-item-title">Debugging under IDLE</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/dictionary.html"><span class="tree-item-title">Dictionary</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/error-code.html"><span class="tree-item-title">Error Code</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/exception-handling.html"><span class="tree-item-title">Exception Handling</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/factorials.html"><span class="tree-item-title">Factorials</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/for-and-in.html"><span class="tree-item-title">FOR and IN</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/function-vs-method.html"><span class="tree-item-title">Function vs Method</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/functions.html"><span class="tree-item-title">Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/guardian-pattern.html"><span class="tree-item-title">Guardian Pattern</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/http_2-flow-control.html"><span class="tree-item-title">HTTP_2 Flow Control</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/index-operator.html"><span class="tree-item-title">Index Operator</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/keyword.html"><span class="tree-item-title">Keyword</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/list.html"><span class="tree-item-title">List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/logical-expressions.html"><span class="tree-item-title">Logical Expressions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/logical-operator.html"><span class="tree-item-title">Logical Operator</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/loop.html"><span class="tree-item-title">Loop</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/methods.html"><span class="tree-item-title">Methods</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/mimetype.html"><span class="tree-item-title">Mimetype</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/multiple-assignment.html"><span class="tree-item-title">Multiple Assignment</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/mutability.html"><span class="tree-item-title">Mutability</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/nested-conditional.html"><span class="tree-item-title">Nested Conditional</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/numbers.html"><span class="tree-item-title">Numbers</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/operators.html"><span class="tree-item-title">Operators</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/order-of-operations.html"><span class="tree-item-title">Order of Operations</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/parameters.html"><span class="tree-item-title">Parameters</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/recursion.html"><span class="tree-item-title">Recursion</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/reference.html"><span class="tree-item-title">Reference</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/replacing-list-elements.html"><span class="tree-item-title">Replacing List Elements</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/reserved-words.html"><span class="tree-item-title">Reserved Words</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/scalar.html"><span class="tree-item-title">Scalar</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/scope-of-functions.html"><span class="tree-item-title">Scope of Functions</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/sequence-types.html"><span class="tree-item-title">Sequence Types</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/short-circuit.html"><span class="tree-item-title">Short Circuit</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/slice.html"><span class="tree-item-title">Slice</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/snake-case.html"><span class="tree-item-title">Snake Case</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string.html"><span class="tree-item-title">String</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string-concatenation.html"><span class="tree-item-title">String Concatenation</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/string-format.html"><span class="tree-item-title">String Format</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/suffix.html"><span class="tree-item-title">Suffix</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/tuple.html"><span class="tree-item-title">Tuple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/type-conversion.html"><span class="tree-item-title">Type Conversion</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/reference/virtual-environment-setup.html"><span class="tree-item-title">Virtual Environment Setup</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="python-notebook/resources"><span class="tree-item-title">Resources</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="python-notebook/resources/examples"><span class="tree-item-title">Examples</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/compound-interest.html"><span class="tree-item-title">Compound Interest</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/day-of-year.html"><span class="tree-item-title">Day of Year</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/examples.html"><span class="tree-item-title">Examples</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/histogram.html"><span class="tree-item-title">Histogram</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/math-examples.html"><span class="tree-item-title">Math Examples</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/overtime.html"><span class="tree-item-title">Overtime</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/prime-number.html"><span class="tree-item-title">Prime Number</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/reverse-strings.html"><span class="tree-item-title">Reverse Strings</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/examples/sort-strings.html"><span class="tree-item-title">Sort Strings</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/built-in-functions-list.html"><span class="tree-item-title">Built-in Functions List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/media-type.html"><span class="tree-item-title">Media Type</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/pep-8-style-guide-python.html"><span class="tree-item-title">PEP 8 - Style Guide Python</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-control-flow.html"><span class="tree-item-title">Python Control Flow</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-howtos.html"><span class="tree-item-title">Python HOWTOs</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-language-reference.html"><span class="tree-item-title">Python Language Reference</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-resources-list.html"><span class="tree-item-title">Python Resources List</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-standard-library.html"><span class="tree-item-title">Python Standard Library</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/python-tutorial.html"><span class="tree-item-title">Python Tutorial</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/string-methods.html"><span class="tree-item-title">String Methods</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/resources/turtle.html"><span class="tree-item-title">Turtle</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="python-notebook/notebook.html"><span class="tree-item-title">Notebook</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <pre class="frontmatter language-yaml" tabindex="0" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">subject</span><span class="token punctuation">:</span> python
+<span class="token key atrule">category</span><span class="token punctuation">:</span> reference
+<span class="token key atrule">type</span><span class="token punctuation">:</span> 
+<span class="token key atrule">tags</span><span class="token punctuation">:</span> HTTP2
+<span class="token key atrule">date</span><span class="token punctuation">:</span> 25<span class="token punctuation">-</span>04<span class="token punctuation">-</span>2023 14<span class="token punctuation">:</span><span class="token number">33</span></code><button class="copy-code-button">Copy</button></pre>
+            <div class="frontmatter-container">
+              <div class="frontmatter-container-header">
+                <div class="frontmatter-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Metadata
+              </div>
+              <div class="frontmatter-section mod-tags"><span class="frontmatter-section-label">Tags</span>
+                <div class="frontmatter-section-data frontmatter-section-tags"><a class="tag" target="_blank" rel="noopener" href="#HTTP2">#HTTP2</a></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">subject</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">python</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">category</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">reference</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">date</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">25-04-2023 14:33</span></div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div>
+            <h1 data-heading="HTTP/2 Flow Control" id="HTTP/2_Flow_Control">HTTP/2 Flow Control</h1>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p><a href="#HTTP2" class="tag" target="_blank" rel="noopener">#HTTP2</a></p>
+          </div>
+          <div>
+            <p>The need for flow control arises in any system, whenever an entity produces items and another entity consumes them. That is, there should be a balance between the rate of production and the consumption to ensure that the sender can’t overwhelm the receiver. This is important in networking protocols as well.</p>
+          </div>
+          <div>
+            <h2 data-heading="Need for flow control in HTTP/2" id="Need_for_flow_control_in_HTTP/2" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Need for flow control in HTTP/2
+            </h2>
+          </div>
+          <div>
+            <p>In HTTP/2, each request/response message that is exchanged between a client and a server is associated with a stream and a single HTTP/2 connection is capable of handling multiple concurrent streams. Therefore, to ensure that streams in a single connection won’t interfere with each other, the flow control is supported, both at the connection and at the stream level.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425143654.png" src="Pasted image 20230425143654.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425143654.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p>HTTP/2 provides flow control via WINDOW_UPDATE frame and remember only DATA frames are subject to flow control. With the WINDOW_UPDATE frame, both the client and the server can independently advertise the number of octets that they are ready to receive and then the peer must respect this imposed value. That is the basic theory behind HTTP/2 flow control.</p>
+          </div>
+          <div>
+            <h3 data-heading="Flow Control Window" id="Flow_Control_Window" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Flow Control Window
+            </h3>
+          </div>
+          <div>
+            <p>Flow control window is just nothing more than an integer value indicating the buffering capacity of the receiver. Each sender maintains a separate flow control window for each stream and for the overall connection.</p>
+          </div>
+          <div>
+            <h3 data-heading="WINDOW_UPDATE Frame" id="WINDOW_UPDATE_Frame" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>WINDOW_UPDATE Frame
+            </h3>
+          </div>
+          <div>
+            <p>WINDOW_UPDATE frame indicates the number of octets the sender can transmit in addition to the existing flow control window. The legal range is 1 to 2³¹ -1 octets.</p>
+          </div>
+          <div>
+            <h3 data-heading="Initial Flow Control Window Size" id="Initial_Flow_Control_Window_Size" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Initial Flow Control Window Size
+            </h3>
+          </div>
+          <div>
+            <p>According to the&nbsp;<a data-tooltip-position="top" aria-label="https://tools.ietf.org/html/rfc7540" rel="noopener" class="external-link" href="https://tools.ietf.org/html/rfc7540" target="_blank">HTTP/2 specification</a>, the initial value for the flow control window is 65,535 octets for both the new streams and the overall connection.</p>
+          </div>
+          <div>
+            <p>However, during the HTTP/2 connection establishment phase, both endpoints can adjust this window size by changing the value of SETTINGS_INITIAL_WINDOW_SIZE property in the SETTINGS frame. But keep in mind that this only applies to streams and not to the connection window. Connection flow control window can only be changed using a WINDOW_UPDATE frame.</p>
+          </div>
+          <div>
+            <p>When this SETTINGS_INITIAL_WINDOW_SIZE value changes, the receiver must adjust the flow control windows by the difference between the new value and the old value.</p>
+          </div>
+          <div>
+            <h2 data-heading="Maintaining Flow Control Window Size" id="Maintaining_Flow_Control_Window_Size" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Maintaining Flow Control Window Size
+            </h2>
+          </div>
+          <div>
+            <p>Since the flow control is directional, both endpoints maintain stream level and connection level windows. The basic mechanism to maintaining the flow control windows, defined by the spec, is as follows.</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">When the sender sends a flow controlled frame(DATA frame), it reduces the space in both windows(stream and connection window) by the length of the transmitted frame.</li>
+              <li data-line="1">When the receiver consumes data, it can send WINDOW_UPDATE frames to the sender to free up flow control windows. The receiver should send separate WINDOW_UPDATE frames for the stream and the connection.</li>
+              <li data-line="2">When the sender receives the WINDOW_UPDATE frames it should update the corresponding windows by the specified value in the frame.</li>
+            </ol>
+          </div>
+          <div>
+            <p>An example of flow control is depicted in the following figure.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425143801.png" src="Pasted image 20230425143801.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425143801.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p>However, please note that implementors are free to choose any algorithm they see fit, to decide when to send the WINDOW_UPDATE frames.</p>
+          </div>
+          <div>
+            <p>Now let’s see an example of HTTP/2 flow control in action.</p>
+          </div>
+          <div>
+            <h2 data-heading="HTTP/2 Flow Control in Action" id="HTTP/2_Flow_Control_in_Action" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>HTTP/2 Flow Control in Action
+            </h2>
+          </div>
+          <div>
+            <p>I’m going to use&nbsp;<a data-tooltip-position="top" aria-label="https://ballerina.io/" rel="noopener" class="external-link" href="https://ballerina.io/" target="_blank">ballerina language</a>&nbsp;to build a simple HTTP service(we can get it up and running with a few lines of code) and it will be configured to use HTTP/2 as its protocol. I’ll use&nbsp;<a data-tooltip-position="top" aria-label="https://nghttp2.org/documentation/package_README.html#nghttp-client" rel="noopener" class="external-link" href="https://nghttp2.org/documentation/package_README.html#nghttp-client" target="_blank">nghttp</a>&nbsp;as my test HTTP/2 client.</p>
+          </div>
+          <div>
+            <p>Following is the simple HTTP echo service that retrieves the incoming payload from the request and sends it back to the caller.</p>
+          </div>
+          <div>
+            <pre class="language-ballerina" tabindex="0"><code class="language-ballerina is-loaded">import ballerina/http;
+import ballerina/log;
+
+http:ServiceEndpointConfiguration serviceConfig = {
+    httpVersion: "2.0",
+    secureSocket: {
+        keyStore: {
+            path: "ballerinaKeystore.p12",
+            password: "ballerina"
+        }
+    }
+};
+
+@http:ServiceConfig { basePath: "/echo" }
+service echoService on new http:Listener(9090, config = serviceConfig) {
+
+    @http:ResourceConfig {
+        methods: ["POST"],
+        path: "/"
+    }
+    resource function testFlow(http:Caller caller, http:Request clientRequest) {
+        var payload = clientRequest.getJsonPayload();
+        if (payload is json) {
+            checkpanic caller-&gt;respond(untaint payload);
+        } else {
+            checkpanic caller-&gt;respond("Error in retrieving payload");
+        }
+    }
+}
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>We can start this service by issuing the following command.</p>
+          </div>
+          <div>
+            <p><code>ballerina run http2-flow-control-test.bal</code></p>
+          </div>
+          <div>
+            <p>Once it is started, you will see a log similar to the following.</p>
+          </div>
+          <div>
+            <p><code>[ballerina/http] started HTTP/WSS endpoint 0.0.0.0:9090</code></p>
+          </div>
+          <div>
+            <p>We are all set now. So let’s use nghttp to send a request to this service. I’m going to send an 82.6kB size of a JSON file via this request to the backend service. Here’s the command.</p>
+          </div>
+          <div>
+            <p><code>nghttp -v -d payload.json --cert myapp.pem https://localhost:9090/echo</code></p>
+          </div>
+          <div>
+            <p>Now let’s observe the nghttp log and analyze the HTTP/2 flow. Here, I’m only going to show you the relevant parts of the logs for clarity.</p>
+          </div>
+          <div>
+            <h4 data-heading="**Figure 1**" id="Figure_1" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><strong>Figure 1</strong>
+            </h4>
+          </div>
+          <div>
+            <p>First, the client sends the SETTINGS frame with the initial window size value as 65535 octets. This tells the server, the number of octets, the client is ready to receive and it is followed by a few priority frames (we are not gonna talk about that right now. That’s a whole other topic) after which the client immediately starts to send headers and data frames to the server.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144312.png" src="Pasted image 20230425144312.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144312.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p>According to the log, we can see that the client has sent four data frames ( (16384 * 3 + 16383 = 65535 octets) to the server. After that client is not allowed to send any more data since the window is now full(flow control window is now equal to the number of octets the client has sent).</p>
+          </div>
+          <div>
+            <h4 data-heading="Figure 2" id="Figure_2" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Figure 2
+            </h4>
+          </div>
+          <div>
+            <p>Then the client receives a SETTINGS frame from the server and the client immediately acknowledges that. Since that does not contain an initial window value, original 65535 will be used as the default. The client also receives the settings ACK from the server which tells the client that the server has received the settings frame, sent by the client(Figure 2).</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144408.png" src="Pasted image 20230425144408.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144408.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <h4 data-heading="Figure 3" id="Figure_3" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Figure 3
+            </h4>
+          </div>
+          <div>
+            <p>So far the client has sent 65535 octets to the server and as I have mentioned before, it can’t send any more data until it receives a WINDOW_UPDATE frame from the server, freeing up its window.</p>
+          </div>
+          <div>
+            <p>So next the client receives two window update frames each with a size of 65535. Stream id 0 is for the connection window and the stream id 13, in this case, is for the relevant stream. Then the client sends the rest of the data to the server (16384+699 = 17083) in two DATA frames. Altogether now the client has sent 82618 octets which constitutes the full payload.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144430.png" src="Pasted image 20230425144430.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144430.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <h4 data-heading="Figure 4" id="Figure_4" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Figure 4
+            </h4>
+          </div>
+          <div>
+            <p>Next, the client starts to receive a response from the server.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144458.png" src="Pasted image 20230425144458.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144458.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <h4 data-heading="Figure 5 &amp; 6" id="Figure_5_&amp;_6" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Figure 5 &amp; 6
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144539.png" src="Pasted image 20230425144539.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144539.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144618.png" src="Pasted image 20230425144618.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144618.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144625.png" src="Pasted image 20230425144625.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144625.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144632.png" src="Pasted image 20230425144632.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144632.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p>First, it receives four DATA frames(8192 * 4 =32768 octets).</p>
+          </div>
+          <div>
+            <p>Then the client sends a window update frame to the server, telling it that the client has consumed 32768 octets and to free up the window space maintained by the server.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144701.png" src="Pasted image 20230425144701.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144701.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <h4 data-heading="Figure 7 &amp; 8" id="Figure_7_&amp;_8" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Figure 7 &amp; 8
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144723.png" src="Pasted image 20230425144723.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144723.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144730.png" src="Pasted image 20230425144730.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144730.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144737.png" src="Pasted image 20230425144737.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144737.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144744.png" src="Pasted image 20230425144744.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144744.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p>Then the client receives another 4 DATA frames, out of which 3 frames with the size 8192 and another DATA frame with the size 8191. (8192*3+8191=32767).</p>
+          </div>
+          <div>
+            <p>Then the client again sends back a window update with 32767 octets as its value to the server to make room in the server window so that the server is allowed to send more data to the client.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144801.png" src="Pasted image 20230425144801.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144801.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <h4 data-heading="Figure 9 &amp; 10" id="Figure_9_&amp;_10" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Figure 9 &amp; 10
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144830.png" src="Pasted image 20230425144830.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144830.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144837.png" src="Pasted image 20230425144837.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144837.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p>Finally, the client receives another two DATA frames with sizes 16384 and 699 respectively which makes up the whole response payload.</p>
+          </div>
+          <div>
+            <p>Then as the final step, we can see that the client has sent a GOAWAY frame to the server, to close the connection.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230425144857.png" src="Pasted image 20230425144857.png" class="internal-embed is-loaded file-embed mod-empty">"Pasted image 20230425144857.png" is not created yet. Click to create.</span></p>
+          </div>
+          <div>
+            <p>This is basically how the flow control works and you can try this out with different initial window sizes by using nghttp ’s -w flag.</p>
+          </div>
+          <div>
+            <h2 data-heading="Error Handling" id="Error_Handling" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Error Handling
+            </h2>
+          </div>
+          <div>
+            <p>Following are some of the error conditions that we have to taken into consideration when implementing flow control.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>WINDOW_UPDATE frame with a value 0 results in a stream error of type protocol error.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Errors on the connection flow control window are treated as connection errors.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Flow control window of the sender cannot exceed 2³¹-1 octets. If a sender receives a WINDOW_UPDATE frame that causes the flow control window to exceed this value then it should be treated as an error.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Other Subtle Facts" id="Other_Subtle_Facts" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Other Subtle Facts
+            </h2>
+          </div>
+          <div>
+            <p>If you want to know more about the error handling and other subtle facts related to flow control, I suggest you read&nbsp;<a data-tooltip-position="top" aria-label="https://tools.ietf.org/html/rfc7540#page-23" rel="noopener" class="external-link" href="https://tools.ietf.org/html/rfc7540#page-23" target="_blank">flow control</a>&nbsp;and&nbsp;<a data-tooltip-position="top" aria-label="https://tools.ietf.org/html/rfc7540#page-46" rel="noopener" class="external-link" href="https://tools.ietf.org/html/rfc7540#page-46" target="_blank">window update</a>&nbsp;sections in&nbsp;<a data-tooltip-position="top" aria-label="https://tools.ietf.org/html/rfc7540" rel="noopener" class="external-link" href="https://tools.ietf.org/html/rfc7540" target="_blank">HTTP/2 specification</a>&nbsp;for a detailed explanation. That being said, this topic, most of the time does not directly concern the users or developers unless you want to develop your own HTTP/2 server or client. But knowledge about this might help you troubleshoot issues when working with HTTP/2.</p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#HTTP/2_Flow_Control"><span class="tree-item-title">HTTP/2 Flow Control</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#Need_for_flow_control_in_HTTP/2"><span class="tree-item-title">Need for flow control in HTTP/2</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Flow_Control_Window"><span class="tree-item-title">Flow Control Window</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#WINDOW_UPDATE_Frame"><span class="tree-item-title">WINDOW_UPDATE Frame</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Initial_Flow_Control_Window_Size"><span class="tree-item-title">Initial Flow Control Window Size</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Maintaining_Flow_Control_Window_Size"><span class="tree-item-title">Maintaining Flow Control Window Size</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#HTTP/2_Flow_Control_in_Action"><span class="tree-item-title">HTTP/2 Flow Control in Action</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#**Figure_1**"><span class="tree-item-title">**Figure 1**</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Figure_2"><span class="tree-item-title">Figure 2</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Figure_3"><span class="tree-item-title">Figure 3</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Figure_4"><span class="tree-item-title">Figure 4</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Figure_5_&amp;_6"><span class="tree-item-title">Figure 5 &amp; 6</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Figure_7_&amp;_8"><span class="tree-item-title">Figure 7 &amp; 8</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Figure_9_&amp;_10"><span class="tree-item-title">Figure 9 &amp; 10</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Error_Handling"><span class="tree-item-title">Error Handling</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Other_Subtle_Facts"><span class="tree-item-title">Other Subtle Facts</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
