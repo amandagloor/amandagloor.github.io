@@ -1,7 +1,7 @@
 ---
 feature_image: "https://picsum.photos/1300/400?image=989"
 feature_text: |
-  ## Site is still under construction 
+  [My Github](https://github.com/amandagloor/) 
 ---
 
 <h2><span style="font-size:30px;">👋</span> Hi there,</h2>
