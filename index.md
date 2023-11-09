@@ -18,7 +18,7 @@ My background in agricultural science and entrepreneurship allows me to create p
 :mailbox: Reach me on [Insta](https://www.instagram.com/uav.amanda/) or drop a message on [LinkedIn](https://www.linkedin.com/in/amanda-gloor/)    
 
 
-Want to know even more about me? 
+**Want to know even more about me?**
 
 Co-Founder of RootedLABs (check my [bio](https://rootedlabs.org/our-project-lead/))
 You can read my [updated resume](resume.md) here    
