@@ -27,7 +27,7 @@ repo: "https://github.com/amandagloor.github.io"
 title: 'My website'
 description: "Amanda's Website"
 permalink: pretty
-logo: "logo.png"
+logo: "logo1.png"
 
 # Pagination
 paginate: 5
