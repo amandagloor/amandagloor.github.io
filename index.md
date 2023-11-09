@@ -1,7 +1,7 @@
 ---
 feature_image: "image1.jpg"
 feature_text: |
-  [My Github](https://github.com/amandagloor/) 
+        
 ---
 
 <h2><span style="font-size:30px;">👋</span> Hi there,</h2>
@@ -15,10 +15,15 @@ feature_text: |
 :seedling: I’m currently learning Elixir, AWS Cloud and Data Modelling <br> 
 :speech_balloon: Ask me about sustainability or why your plant is dying <br>
 </p>    
-:mailbox: Reach me on [Insta](https://www.instagram.com/uav.amanda/) or drop a message on [LinkedIn](https://www.linkedin.com/in/amanda-gloor/)    
+:mailbox: Reach me on [Insta](https://www.instagram.com/uav.amanda/) or drop a message on [LinkedIn](https://www.linkedin.com/in/amanda-gloor/)   
+<br>
+[My Github](https://github.com/amandagloor/)
+<br>
+<br>
+<br>
 
 
-**Want to know even more about me?**
+**Want to know more about me?**
 
 Co-Founder of [RootedLABs](www.rootedlabs.org) (check my [bio](https://rootedlabs.org/our-project-lead/)) <br>
 You can read my [updated resume](resume.md) here <br>    
