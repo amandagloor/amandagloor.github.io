@@ -6,9 +6,9 @@ feature_text: |
 
 <h2><span style="font-size:30px;">👋</span> Hi there,</h2>
 <h2>I'm Amanda Gloor. </h2>
-<h4>An energetic and creative professional, with a passion for biology and technology. <br>
+<h4>An energetic and creative professional, with a passion for biology and technology.</h4> <br>
 <br>
-My background in agricultural science and entrepreneurship allows me to create practical, innovative solutions in the fast-paced Agri-tech industry. </h4>
+**My background in agricultural science and entrepreneurship allows me to create practical, innovative solutions in the fast-paced Agri-tech industry.** 
 <br>
 <p>
 :telescope: Junior Programmer, Agro-Tech and Science, Business Development and Media <br>
