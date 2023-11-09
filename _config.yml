@@ -27,7 +27,7 @@ repo: "https://github.com/amandagloor.github.io"
 title: 'My website'
 description: "Amanda's Website"
 permalink: pretty
-logo: "https://github.com/amandagloor/amandagloor.github.io/blob/3e9b36ec398183ef10e53838f2c43f3988091c52/WhatsApp%20Image%202023-11-03%20at%2013.59.30_017b03b4-modified.png"
+logo: "logo.png"
 
 # Pagination
 paginate: 5
