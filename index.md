@@ -1,5 +1,5 @@
 ---
-feature_image: "https://picsum.photos/1300/400?image=989"
+feature_image: "image1.jpg"
 feature_text: |
   [My Github](https://github.com/amandagloor/) 
 ---
