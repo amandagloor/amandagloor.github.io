@@ -11,16 +11,19 @@ feature_text: |
 My background in agricultural science and entrepreneurship allows me to create practical, innovative solutions in the fast-paced Agri-tech industry. </h4>
 <br>
 <p>
-:telescope: Junior Programmer, Agro-Tech and Science, Sales and Marketing <br>
-:seedling: I’m currently learning AWS Cloud and Data Modelling <br> 
+:telescope: Junior Programmer, Agro-Tech and Science, Business Development and Media <br>
+:seedling: I’m currently learning Elixir, AWS Cloud and Data Modelling <br> 
 :speech_balloon: Ask me about sustainability or why your plant is dying <br>
 </p>    
-:mailbox: Reach me on [Insta](https://www.instagram.com/amanda_in_tech/) or drop a message on [LinkedIn](https://www.linkedin.com/in/amanda-gloor/)    
+:mailbox: Reach me on [Insta](https://www.instagram.com/uav.amanda/) or drop a message on [LinkedIn](https://www.linkedin.com/in/amanda-gloor/)    
 
 
-Want to know even more about me?    
-You can check out my [updated resume](resume.md) here    
-The best way to reach me is via email is amanda.gloor@gmail.com   
+Want to know even more about me? 
+
+Co-Founder of RootedLABs (check my [bio](https://rootedlabs.org/our-project-lead/))
+You can read my [updated resume](resume.md) here    
+The best way to reach me is via email amanda.gloor[at]proton[dot]me   
     
     
 Check out my [Python Notebook](python/python-notebook/notebook.html)!
+Gist collection [here]
