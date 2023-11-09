@@ -1,5 +1,5 @@
 ---
-feature_image: "image1.jpg"
+feature_image: "banner.png"
 feature_text: |
         
 ---
