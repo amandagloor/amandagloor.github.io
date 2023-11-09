@@ -20,10 +20,10 @@ My background in agricultural science and entrepreneurship allows me to create p
 
 **Want to know even more about me?**
 
-Co-Founder of RootedLABs (check my [bio](https://rootedlabs.org/our-project-lead/))
-You can read my [updated resume](resume.md) here    
+Co-Founder of [RootedLABs](www.rootedlabs.org) (check my [bio](https://rootedlabs.org/our-project-lead/)) <br>
+You can read my [updated resume](resume.md) here <br>    
 The best way to reach me is via email amanda.gloor[at]proton[dot]me   
     
     
-Check out my [Python Notebook](python/python-notebook/notebook.html)!
-Gist collection [here]
+Check out my [Python Notebook](python/python-notebook/notebook.html)! <br>
+Gist collection [here](https://gist.github.com/amandagloor)
